@@ -1,0 +1,23 @@
+.DS_Store
+
+/build/
+
+paper/*.aux
+paper/*.bbl
+paper/*.bcf
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.run.xml
+paper/*.toc
+paper/*.pdf
+
+*.sqlite-shm
+*.sqlite-wal
+*.tmp
+
+# Local unpublished material is never part of the release allowlist.
+/internal/
+/tmp/

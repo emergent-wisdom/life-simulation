@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+url: "https://github.com/emergent-wisdom/life-simulation"
+license:
+  - MIT
+  - CC-BY-4.0
+message: "Please cite the Life Simulation paper and identify the version or artifact digest you used."
+title: "Life Simulation: Learning from Worlds and Their Construction"
+authors:
+  - family-names: Westerberg
+    given-names: Henrik
+    affiliation: Emergent Wisdom
+abstract: "A method and research proposal connecting continuing explicit worlds, native observations, process histories, representation revision, and learning."
+preferred-citation:
+  type: article
+  title: "Life Simulation: Learning from Worlds and Their Construction"
+  authors:
+    - family-names: Westerberg
+      given-names: Henrik
+  year: 2026

@@ -1,0 +1,19 @@
+{
+  "schema": "life-simulation-vendored-source/v1",
+  "artifact": "meaning-model.tex",
+  "sha256": "23e373ae19e27402ccecca512905aa1361cfcf683f319b0117a1f44669ceef55",
+  "grammar_artifact": "meaning-model-grammar.tex",
+  "grammar_sha256": "8e6c086566126ef6e348bc13436f2b81ef7b0db7d376b334d98b8b7bdf3451df",
+  "interface_artifact": "interface-blocks.tex",
+  "interface_sha256": "e63aaf80204f28ce0741eb8b69dc9fe3c6a7b1eb4d4e0d2f096a669f714686c3",
+  "canonical_repository": "meaning-model",
+  "source_state": "content_addressed_release_snapshot",
+  "source_paths": {
+    "meaning-model.tex": "paper/meaning-model.tex",
+    "meaning-model-grammar.tex": "paper/meaning-model-grammar.tex",
+    "interface-blocks.tex": "paper/includes/interface-blocks.tex"
+  },
+  "source_note": "The SHA-256 values bind the exact release snapshot bytes to their canonical source paths. No development commit is asserted as the source of these bytes; the two repositories can therefore receive independent initial commits without circular commit references.",
+  "release_provenance_status": "content_verified",
+  "release_requirement": "Any source update requires deliberate synchronization of these snapshots and their digests. Public repository and archival identifiers may be added when assigned without changing this content identity."
+}
