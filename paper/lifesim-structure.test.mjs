@@ -567,6 +567,22 @@ test('the Fractal Intelligence adapter and matched trace experiment remain', () 
   assert.match(learning, /gate rejection alone does not identify the cause of failure/);
 });
 
+test('conceptual search connects groundings, simulated solutions, and effects on lives', () => {
+  assert.match(learning, /search need not stop at inherited human classifications/);
+  assert.match(learning, /\\label\{tab:concept-search-resources\}/);
+  assert.match(learning, /\\label\{fig:concept-solution-loop\}/);
+  assert.match(learning, /Boxes identify functional roles, not necessarily separate AI models or programs/);
+  for (const resource of ['World examples', 'Canonical models', 'Recognizers', 'Connected concept world', 'Concept histories']) {
+    assert.ok(learning.includes(`${resource} &`), `missing concept-search resource: ${resource}`);
+  }
+  assert.match(learning, /distinction between separate people and independent information paths/);
+  assert.match(learning, /Alternatives branch from the same permitted world state and information cutoff/);
+  assert.match(learning, /predicted gains are not relabeled as observed benefits/);
+  assert.match(learning, /Consequences supply evidence for an evaluative judgment; they do not determine its commitments/);
+  assert.match(learning, /compare a fixed concept library with searched and revised groundings/);
+  assert.match(learning, /Independent environments or later observations must supply the decisive outcomes/);
+});
+
 test('the process sensorium and synthetic inversion are defined with the temporal object', () => {
   assert.match(temporal, /Local models and perspective.*A proposed process sensorium.*Synthetic bootstrap and generative inversion/);
   assert.match(temporal, /\\label\{eq:joint-process-prediction\}/);

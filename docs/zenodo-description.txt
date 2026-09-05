@@ -1,0 +1,16 @@
+Life Simulation: Learning from Worlds and Their Construction
+
+Life Simulation proposes simulating how lives and worlds unfold: how people's experiences, relationships, actions, and surroundings change together. It connects text and other observations with numerical process histories and expressed understanding through the Meaning Model. The aim is AI that can understand how lives unfold, anticipate consequences, and act with care.
+
+The method couples world construction with inverse interpretation. Constructed worlds provide known process histories and varied observations from which models can learn to reconstruct what those observations support. Training on world histories aims to teach how situations develop; training on construction histories aims to teach how to choose, deepen, and revise their representations. Together, these routes could support one encompassing Meaning Model, or comparable representation, spanning world history and all texts ever written, while preserving distinctions between evidence, interpretation, and invention.
+
+Numerical coverage is open-ended: models can learn new quantities, track them at finer resolutions, and test whether compact mathematical expressions explain their dynamics. Capability can grow through training and better simulation tools and strategies. It could support an evolving understanding of a person's whole life, developed and corrected during conversation.
+
+Deeper understanding of people can enable care or manipulation. The recommended combined training therefore couples that capability with Entangled Alignment's continuing Reader: Total Saturation carries the Reader Core across the corpus, while Refraction applies its evaluative orientation to particular situations. An Understanding Graph links interpretation and correction to consequences for people. The alignment benefit remains untested. Narrative is the first controlled laboratory, not the method's limit; the paper specifies learning objectives and experiments.
+
+Proposed integration
+
+The accompanying figure shows how Fractal Intelligence searches for useful concepts and problem decompositions beyond inherited classifications. Simulation explores the consequences of candidate solutions, and the continuing Reader evaluates effects on people's wants, choices, and burdens over time. The boxes identify functional roles, not necessarily separate AI models: simulation can use an AI model, numerical tools, or both. Predicted effects remain distinct from later observations. Understanding Graph links retain reasons for revisions, and Sema identifies the concept definitions used. Evaluated histories can support training, while improvements to tools and strategies can also improve the next attempt.
+
+Life Simulation repository: https://github.com/emergent-wisdom/life-simulation
+Meaning Model repository and tools: https://github.com/emergent-wisdom/meaning-model

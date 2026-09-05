@@ -13,6 +13,8 @@
     "scripts/verify-vendored-sources.mjs",
     "docs/RELEASE.md",
     "docs/FILE-INVENTORY.md",
+    "docs/figures/concept-solution-loop.png",
+    "docs/zenodo-description.txt",
     "docs/implementation/RELEASE-BOUNDARY.md",
     "paper/life-simulation.tex",
     "paper/lifesim-structure.test.mjs",

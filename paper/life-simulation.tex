@@ -348,14 +348,17 @@ capability.
 
 A further hypothesis makes capability organization part of this changing
 world. The Meaning Model can provide the evolving world, visible evidence,
-available options, actions, consequences, and perspective-specific readings.
+available options, actions, consequences, and perspective-specific readings,
+as well as groundings for the concepts through which the problem is understood.
 Fractal Intelligence can provide instrumented Events tied to persistent,
 concept-defined callable Solvers. Proposed decompositions are assessed for
 necessity, independence, universality, and completeness within their declared
 scope; execution can retain
 a reusable capability or motivate splitting, merging, or reparenting it.
 Learning therefore concerns which capabilities to form and compose, as well
-as which route to take. This requires that telemetry is causally tied to
+as which route to take. Candidate solutions can be simulated as interventions;
+their effects on different people's lives over time can inform both solution
+selection and revision of the problem's conceptual frame. This requires that telemetry is causally tied to
 execution rather than reconstructed afterward; Section~\ref{sec:problem-solving-events} specifies
 the proposed adapter and controls. Alien-world search changes another object:
 the categories that direct exploration. A diagnosis of repeated mechanisms can
@@ -1670,7 +1673,7 @@ measurement, explicit uncertainty, and prospective validation. Its output is
 still an inference made by an observer, not direct possession of $b$'s state;
 no current artifact trains or tests such a learner.
 
-\subsection{Problem-solving episodes as world events}
+\subsection{Conceptual search and problem-solving episodes}
 \label{sec:problem-solving-events}
 
 Problem solving can be represented as a process before any special solver
@@ -1683,10 +1686,77 @@ situations is an if--then profile rather than one global trait
 \cite{shoda1994signatures,mischelShoda1995caps}. Changing character state does
 not require one fixed personality decomposition in every domain.
 
-Fractal Intelligence supplies a second prospective source of process
+The conceptual carve is not merely a task plan. Fractal Intelligence first
+locates a capability among more general and neighboring concepts, then asks
+which differentiated contributions make that capability possible. A plan
+sequences a chosen approach; changing the conceptual carve can expose a
+different approach altogether~\cite{westerbergFractal2026}. The search need not
+stop at inherited human classifications: it may propose a new distinction,
+revise a concept's grounding, or compare alternative decompositions. Familiar
+categories supply starting points and baselines, not the boundary of conceptual
+space. Several decompositions may remain useful under different purposes,
+constraints, and budgets; the aim is better-supported problem-solving
+structures, not a guarantee of one globally optimal hierarchy.
+
+The Meaning Model could represent the concepts being searched as well as the
+world in which their associated Solvers act. Table~\ref{tab:concept-search-resources}
+connects its grounding resources and concept histories to specific search
+operations. These resources can coexist and be opened selectively; every
+concept need not receive a deep model before a Solver can use it.
+
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.23\textwidth}Y@{}}
+\toprule
+Concept resource & Proposed use in problem-solving search \\
+\midrule
+World examples & Link a concept to successful, failed, and boundary episodes.
+Compare their sources, roles, actions, and outcomes to find a missing distinction. \\
+Canonical models & Express candidate constituent roles, processes, and
+constraints in the same grammar as their instances. Use the model to identify
+missing contributions and propose a corresponding Solver organization. \\
+Recognizers & Compare a cutoff-visible world fragment with a resolved grounding
+version; return role alignments and assessment Events with local fit Cuts.
+Use mismatches to guide diagnosis and routing, rather than treating likeness
+as proof that a solution works. \\
+Connected concept world & Explore specialization, composition, analogy, and
+other declared relations across concepts and their instances. A spatial map
+may help retrieval or exploration if its distances have a defined, tested meaning. \\
+Concept histories & Retain dated formulations, uses, revisions, and the evidence
+or reasoning behind them. Learn which failures motivated a new concept or
+decomposition, keeping historical chronology distinct from the modeler's
+construction clock. \\
+\bottomrule
+\end{tabularx}
+\caption{Concept resources as proposed inputs to Fractal Intelligence search,
+not only annotations of completed Solver traces.}
+\label{tab:concept-search-resources}
+\end{table}
+
+Historical places belong to a concept's carriers and formulation or adoption
+Events. In a constructed conceptual geography, representations may instead
+move as their groundings or relationships change; display motion alone neither
+changes a definition nor establishes semantic similarity. The corresponding
+metric or navigation policy is an additional hypothesis to test. Likewise,
+recognizers retain the ordinary distinction between an unweighted Realization
+and an assessment Event's fit Cut; unrelated concepts are assessed separately.
+
+Consider an authored office where two checkers repeat a calculation from the
+same incorrectly copied table. A decomposition into producer and checker may
+miss the failure because both checking actions are present. Comparing this
+episode with cases using independently obtained sources could motivate a
+distinction between separate people and independent information paths. The
+system could revise the verification grounding, introduce source-validation
+work into the Solver organization, and test the revision on further cases.
+The reusable result would be a conceptual distinction and an associated
+capability, not just another pass through the original calculation. Training
+on that revision could teach when the available concepts themselves need repair.
+
+Fractal Intelligence also supplies a prospective source of process
 histories: a Solver is invoked, proposes or follows a conceptual carve, receives
-a typed gate judgment, and may stop, deepen, or reframe
-\cite{westerbergFractal2026}. Table~\ref{tab:fractal-meaning-adapter} states a
+a typed gate judgment, and may stop, deepen, or reframe.
+Table~\ref{tab:fractal-meaning-adapter} states a
 proposed representation of that telemetry under the Meaning Model profile. It
 is a structural correspondence, not an implemented adapter. In particular, an
 invocation binds the executing agent or system in an actor role and the Solver
@@ -1696,18 +1766,6 @@ the authority whose record or judgment is expressed: observed execution
 descends from History, a self-attribution is contained in a named inner process
 beneath the executing system's lifecycle, and a gate assessment is contained
 within the evaluator's named perspective process.
-
-The conceptual carve is not merely a task plan. Fractal Intelligence first
-locates a capability among more general and neighboring concepts, then asks
-which differentiated contributions make that capability possible. A plan
-sequences a chosen approach; changing the conceptual carve can expose a
-different approach altogether. In combination, the Meaning Model describes the
-particular world and its dependencies, while Fractal Intelligence proposes
-the capability structure through which to understand or change it. Training
-on alternative carves and their consequences could teach both recognition of
-shared structure across settings and detection of a missing dimension. A
-decomposition useful for one purpose need not be the world's unique or final
-decomposition.
 
 Here \emph{cognitive proprioception} names a learned ability to forecast and
 diagnose the system's own problem-solving transitions from causally relevant
@@ -1859,6 +1917,120 @@ does not identify the cause of failure. Alternative-route executions and
 independent outcomes are needed to test that diagnosis; simulated branches
 establish behavior under their declared world, not truth about reality.
 
+\paragraph{Simulating implementation and following its effects.}
+A Solver node could consult the shared Meaning Model to ask what would happen
+if its proposed solution were implemented. Alternatives branch from the same
+permitted world state and information cutoff, including a no-intervention
+baseline where meaningful. Each branch records its intervention, assumptions,
+resources, and candidate dynamics. Life Simulation advances the affected
+processes; Meaning Model governs their representation and branch status.
+Nodes need not copy or fully simulate the whole world: they can open detail
+where a dependency or consequential uncertainty warrants it, and return
+projected consequences to the parent. A successful local proposal may then be
+rejected or reframed because of its effects beyond the child's boundary.
+
+This supports the question ``what is a good solution?'' through comprehensive
+consequence modeling as an ambition, not a claim that any finite rollout has
+captured every effect. The assessment follows affected people, institutions,
+resources, and environments across time. For each person it may retain which
+wants were served or frustrated, whose choices were respected, who bore costs,
+and whether relief, harm, or opportunity persisted. Returning to the office,
+an extra check might prevent errors while delaying wages or transferring work
+to an unpaid family member. Task success and these effects remain separately
+visible. When implementation occurs, later observations create their own
+history alongside the forecast; predicted gains are not relabeled as observed
+benefits. Mismatch may motivate revising the solution, the dynamics, or the
+conceptual frame that omitted an affected process.
+
+Consequences supply evidence for an evaluative judgment; they do not determine
+its commitments. A grounding for \emph{good solution} can make the comparison
+explicit without becoming a universal goodness scalar. In the recommended
+alignment treatment, the continuing Reader and Refraction bring the Reader
+Core's care-oriented commitments to these particular lives and tradeoffs
+(Section~\ref{sec:alignment}). A favorable aggregate must not silently erase
+one person's burden, and a candidate's own simulation is not its independent
+verification. The loop therefore joins conceptual search, proposed action,
+simulated consequences, evaluation, observed follow-up, and explicit revision.
+Figure~\ref{fig:concept-solution-loop} shows these roles within one shared
+representation.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[
+  font=\sffamily\small,
+  stage/.style={draw=black!65, fill=black!3, rounded corners=2pt,
+    line width=0.55pt, align=center, text width=4.15cm,
+    minimum width=4.6cm, minimum height=2.15cm, inner sep=5pt},
+  flow/.style={-{Latex[length=2mm]}, line width=0.8pt, draw=black!80},
+  shared/.style={{Latex[length=1.6mm]}-{Latex[length=1.6mm]},
+    line width=0.5pt, draw=black!55},
+  feedback/.style={flow, dashed},
+  edge label/.style={font=\sffamily\footnotesize, fill=white, inner sep=2pt}
+]
+\node[stage, text width=15.05cm, minimum width=15.6cm,
+  minimum height=1.55cm, fill=black!7] (world) at (7.9,0) {
+  \textbf{Meaning Model: shared world and concept representations}\\[3pt]
+  Examples, canonical models, recognizers, concept relations, and histories\\
+  Linked records retain cutoffs, perspectives, and branch status
+};
+\node[stage] (search) at (2.4,-2.65) {
+  \textbf{Fractal Intelligence}\\[5pt]
+  Search and revise concepts\\
+  and decompositions; organize\\
+  Solvers to propose solutions
+};
+\node[stage] (simulate) at (7.9,-2.65) {
+  \textbf{Simulate possible futures}\\[5pt]
+  AI model, tools, or both\\
+  Try alternative actions and\\
+  follow their projected effects
+};
+\node[stage] (evaluate) at (13.4,-2.65) {
+  \textbf{Continuing Reader}\\[5pt]
+  Reader Core via Refraction\\
+  Wants, choices, and burdens\\
+  across people and time
+};
+\draw[shared] (2.4,-0.78) -- (search.north);
+\draw[shared] (world.south) -- (simulate.north);
+\draw[shared] (13.4,-0.78) -- (evaluate.north);
+\draw[flow] (search.east) -- (simulate.west);
+\draw[flow] (simulate.east) -- (evaluate.west);
+
+\node[stage, text width=9.35cm, minimum width=9.9cm,
+  minimum height=1.75cm] (revise) at (5.05,-5.75) {
+  \textbf{Revise and improve}\\[4pt]
+  Revise concepts, solutions, dynamics, and tool strategies.\\
+  Evaluated world and construction histories support training.
+};
+\node[stage, minimum height=1.75cm] (observe) at (13.4,-5.75) {
+  \textbf{Observed follow-up}\\[4pt]
+  After an implemented action,\\
+  compare later observations\\
+  with predicted effects
+};
+\draw[flow] (evaluate.south) -- node[edge label, right] {if implemented}
+  (observe.north);
+\draw[flow] (observe.west) -- (revise.east);
+\draw[feedback] (11.8,-3.73) -- (11.8,-4.15) -- (7.9,-4.15)
+  -- node[edge label, left] {revise or reject} (7.9,-4.87);
+\draw[feedback] (2.4,-4.87) -- node[edge label, left] {next attempt}
+  (search.south);
+\end{tikzpicture}
+\caption{Proposed integration of conceptual search, simulation, and
+care-guided evaluation through Entangled Alignment. Boxes identify functional
+roles, not necessarily separate AI models or programs. The simulation role
+can combine language-model proposals, trained predictors, and numerical tools.
+The shared Meaning Model supports every stage; its
+concept resources are detailed in Table~\ref{tab:concept-search-resources}.
+Solid arrows carry proposals, consequences, or later evidence; dashed arrows
+return revisions. A solution can be rejected before implementation. Predicted
+and observed effects remain distinct, and consequences inform evaluation
+without supplying the Reader Core's commitments. Understanding Graph links
+retain the reasons for revisions; Sema identifies the concept definitions used.}
+\label{fig:concept-solution-loop}
+\end{figure}
+
 \paragraph{Self-evaluation as an estimator.}
 The system's invocations can be assessed as problem-solving episodes under the
 same versioned situated-intelligence grounding used for character decisions in
@@ -1888,6 +2060,18 @@ gain, and transfer to an unrelated problem domain. The unstructured-trace
 comparison isolates whether the grammar adds value beyond retaining process
 history and its annotations. No current artifact emits this adapter, trains
 these arms, or validates cognitive proprioception.
+
+An extension would separate the new mechanisms: compare a fixed concept
+library with searched and revised groundings, and compare solution selection
+with and without implementation rollouts. Hold observations, tasks, evaluator
+commitments, and total compute fixed. Retain candidate definitions, rejected
+carves, forecasts, actions, outcomes, and revision reasons, with later concept
+versions withheld from earlier prediction inputs. Independent environments or
+later observations must supply the decisive outcomes. Measure task performance,
+transfer, cost, and prediction of effects on different people over declared
+horizons. A construction may improve recognition without improving action;
+both gains require testing. These are proposed studies, not capabilities
+established by the present artifact.
 
 \section{Measurement: Inner-Life Data from the World}
 \label{sec:measurement}
@@ -2326,7 +2510,11 @@ child's local objective is insufficient if their combination violates a
 person's expressed choice. Execution-linked histories expose such failures
 for learning; a neat decomposition or an eloquent rationale does not certify
 the objective. Section~\ref{sec:problem-solving-events} specifies the
-representation and its matched trace test.
+conceptual-search resources, implementation rollouts, and longitudinal
+evaluation that could help investigate what makes a solution good. World
+consequences can expose people or dependencies omitted by the original frame;
+the Reader's evaluative commitments guide how those consequences matter.
+The same section specifies the representation and its matched trace test.
 
 Cognitive annotation remains optional for general world representation. In
 this integrated alignment proposal, the continuing Reader and its evaluative

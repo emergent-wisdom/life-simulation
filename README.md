@@ -12,8 +12,8 @@ Read the [paper PDF](output/pdf/life-simulation.pdf), its [LaTeX source](paper/l
 or the [structure map](paper/LIFESIM-STRUCTURE.md). [Citation metadata](CITATION.cff)
 identifies the manuscript.
 
-The paper and source archive were published on [Zenodo](https://zenodo.org/records/22316212)
-on 5 September 2026: [doi:10.5281/zenodo.22316212](https://doi.org/10.5281/zenodo.22316212).
+The paper and source archive were published on [Zenodo](https://zenodo.org/records/22348228)
+on 5 September 2026: [doi:10.5281/zenodo.22348228](https://doi.org/10.5281/zenodo.22348228).
 
 The [file inventory](docs/FILE-INVENTORY.md) explains every uploaded file;
 [`RELEASE-MANIFEST.json`](RELEASE-MANIFEST.json) records exact sizes and hashes.
@@ -36,6 +36,18 @@ Model construction, not to Life Simulation's proposed learning experiments.
 
 The paper develops the method and specifies experiments for evaluating its
 learning hypotheses.
+
+![Fractal Intelligence searches for concepts and solutions; simulation projects their effects; the continuing Reader evaluates consequences for people. The Meaning Model connects these roles, with feedback from evaluation and later observations.](docs/figures/concept-solution-loop.png)
+
+Fractal Intelligence searches for useful concepts and problem decompositions,
+not only those already named by people. Life Simulation explores what could
+happen if a proposed solution were implemented. The continuing Reader applies
+the Reader Core through Refraction to evaluate effects on people's wants,
+choices, and burdens over time. The Meaning Model supplies their shared world
+and concept representation. These are functional roles, not necessarily
+separate AI models: simulation can use an AI model, numerical tools, or both.
+Evaluated world and construction histories can support training, while better
+tools and strategies can improve the next attempt without retraining.
 
 The existing Rust executor provides immutable typed model revisions,
 versioned world heads, seeded process-state candidates, inspection, reroll,

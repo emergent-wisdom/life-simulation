@@ -1,8 +1,8 @@
-# Initial upload inventory
+# Release file inventory
 
 Destination: https://github.com/emergent-wisdom/life-simulation
 
-This standalone paper repository has 26 tracked files. The 25 release inputs
+This standalone paper export has 28 files. The 27 release inputs
 are explicitly selected in `release-files.json`; `RELEASE-MANIFEST.json` adds
 their byte sizes and SHA-256 hashes. The manifest does not hash itself:
 Git identifies the exact committed manifest along with the other files.
@@ -18,10 +18,12 @@ Git identifies the exact committed manifest along with the other files.
 | `NOTICE` | Separates code/content licensing and preserves third-party rights. |
 | `README.md` | Research overview, evidence limits, repository map, and quick start. |
 | `Makefile` | Builds the PDF and runs standalone checks; runtime checks are opt-in. |
-| `release-files.json` | Explicit list of the 25 release inputs. |
+| `release-files.json` | Explicit list of the 27 release inputs. |
 | `RELEASE-MANIFEST.json` | Byte count and SHA-256 for every release input. |
 | `docs/FILE-INVENTORY.md` | This explanation of the uploaded files. |
 | `docs/RELEASE.md` | Reproducible export and release procedure. |
+| `docs/figures/concept-solution-loop.png` | Integration diagram from the paper, rendered for the README and record description. |
+| `docs/zenodo-description.txt` | Plain text to paste into the record description, with an explanation of the separately uploaded diagram. |
 | `docs/implementation/RELEASE-BOUNDARY.md` | What this paper release does and does not provide. |
 | `output/pdf/life-simulation.pdf` | Ready-to-read Life Simulation paper. |
 | `paper/life-simulation.tex` | Canonical LaTeX source for that PDF. |

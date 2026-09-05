@@ -10,7 +10,7 @@
     {
       "path": "CITATION.cff",
       "bytes": 830,
-      "sha256": "c0218bb55f077dc00c1e8eee6869683e5cd9c918a97696275a91dae2bf356132"
+      "sha256": "b2bbc33f02bb880bf7285e5930a9c646e83b529dd6b99f95f9a8f3da5c97d1d7"
     },
     {
       "path": "LICENSE",
@@ -34,13 +34,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5944,
-      "sha256": "6ac535c2062493004aa74701594374dd9e29c2b035c6e87d0f280cf4cff8953b"
+      "bytes": 6915,
+      "sha256": "db016223ef7428e7bf5ed7efca814cd0d7783a04a4f2d86243cdc62b1c6748b3"
     },
     {
       "path": "docs/FILE-INVENTORY.md",
-      "bytes": 2805,
-      "sha256": "fe8072924350092e8b2b4f67408c75661123d1abd085ec9620c662e50f3ebb9a"
+      "bytes": 3063,
+      "sha256": "472e493ceac12d745d328e64dc3cdd142a65a627fadae52aa390ea51a7d291ee"
     },
     {
       "path": "docs/RELEASE.md",
@@ -48,19 +48,29 @@
       "sha256": "2c8252c55ef5d4dadc58fc5a540a6f25ef3526f499b3a90d4af715760c6c26f2"
     },
     {
+      "path": "docs/figures/concept-solution-loop.png",
+      "bytes": 159235,
+      "sha256": "a9db7be4ae875760cc1d98791faf3650a8bc05a405ad262fc3155074c3e45043"
+    },
+    {
       "path": "docs/implementation/RELEASE-BOUNDARY.md",
       "bytes": 1987,
       "sha256": "20127ffe609f2319bb8873224f77d1a9c0f46914a7968845678e9766127bf81c"
     },
     {
+      "path": "docs/zenodo-description.txt",
+      "bytes": 2901,
+      "sha256": "03474e5b2767b85e3868ae8def7654e3e9aee35a9a55e418adbfbd79538a3a44"
+    },
+    {
       "path": "output/pdf/life-simulation.pdf",
-      "bytes": 473584,
-      "sha256": "ee80e7702f31b23c67508d32f7fd3fd44a0e71ae0809d3cdc7a56577657ce9b9"
+      "bytes": 495064,
+      "sha256": "958e87bc75e89e10f88b7bfd02d2144847dc29ef5147a2b34656e12f949e4218"
     },
     {
       "path": "paper/LIFESIM-STRUCTURE.md",
-      "bytes": 47514,
-      "sha256": "158f4c7cf61a1d5eb1368f1a893502f7dbe80989dc563d02f0429d236fd5fe57"
+      "bytes": 49289,
+      "sha256": "3b28b244e71a44d48ac3c993974c91c070e4af25f508ed34568e321815695b92"
     },
     {
       "path": "paper/emergentwisdom-longform.sty",
@@ -69,13 +79,13 @@
     },
     {
       "path": "paper/life-simulation.tex",
-      "bytes": 192486,
-      "sha256": "36dbeb185bf5e2d406eb4fa3c8f0a7ab0e584a105a883aef8467dd66c7d349fd"
+      "bytes": 202933,
+      "sha256": "5fde13179d06e35ec3284b3128ea2115a94c31ba98a481c9a3cbe659c1b6687e"
     },
     {
       "path": "paper/lifesim-structure.test.mjs",
-      "bytes": 63526,
-      "sha256": "68b9c4b2d2fecfa8aef6b67b071557558af5659fafdc6671e040accae039f9b7"
+      "bytes": 64813,
+      "sha256": "a9325757afee3d65c6c87f11c3a7e77c4ad1ef3a26997fb1f006a1101282d315"
     },
     {
       "path": "paper/references.bib",
@@ -109,8 +119,8 @@
     },
     {
       "path": "release-files.json",
-      "bytes": 871,
-      "sha256": "ca9f61584ff38ec70cc236ea9facc14468e95767d063e1b9c1e19e89bd18bfa1"
+      "bytes": 952,
+      "sha256": "d034b731fce26e04bbbd40cc929fd5fe8ad132ec8007cfe3d93223fcec863a22"
     },
     {
       "path": "scripts/export-release.mjs",

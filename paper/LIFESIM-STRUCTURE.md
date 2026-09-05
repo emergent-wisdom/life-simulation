@@ -102,6 +102,27 @@ mechanism exploration. Their histories supply training data because these
 organizations act and change; neither contribution reduces to recording traces
 or presumes that rationales reveal a mind.
 
+This connection includes conceptual search and evaluation of interventions,
+not only execution tracking. Meaning Model can ground candidate concepts in
+world examples, canonical models, recognizers, typed conceptual relations,
+and retained histories. Fractal Intelligence searches alternative concepts
+and decompositions beyond inherited classifications; recognition, routing,
+and problem-solving outcomes test their usefulness. A semantic map is not
+literal historical geography, and a spatial navigation policy needs testing.
+Solver nodes may simulate implementing a proposal and compare its effects
+across affected people and time horizons. Later observations remain distinct
+from those forecasts. Consequences can expose an inadequate problem frame,
+while the continuing Reader's commitments guide their evaluation. Preserve
+the ambition of comprehensive consequence modeling without treating finite
+coverage, concept likeness, or the candidate's own forecast as proof of a good
+solution. Compare fixed and revised groundings and selection with and without
+rollouts under matched resources and independent outcome checks.
+The integration figure shows the shared representation, conceptual search,
+simulation, care-guided evaluation, and revision loop. Implementation and
+observed follow-up remain separate from projected effects. Its boxes identify
+functional roles, not necessarily separate models; the simulation role can use
+an AI model, numerical tools, or both.
+
 The alignment-facing purpose is to join increasing capability with contextual
 understanding of people and an evaluative orientation that affects conduct.
 Life Simulation connects nine companion contributions rather than replacing
@@ -686,6 +707,10 @@ private conversation, archive result, or historical fixture is evidence.
 - `westerbergOntology2026` and `westerbergTHL2026` must be cited for their
   distinct loops.
 - The Fractal Intelligence adapter and matched trace experiment must remain.
+- Preserve the five concept-search resources, the shared-source checking
+  example, and implementation rollouts with effects on different lives over
+  time. Concept search, predictive accuracy, action quality, and alignment
+  remain distinct hypotheses; no rollout is automatically an observed outcome.
 - The integrated alignment hypothesis must remain beside manipulation,
   score-gaming, semantic drift, and successor-continuity risks. No complete
   emotional access, universally necessary grammar, or demonstrated solution is
