@@ -13,8 +13,8 @@ authors:
 abstract: "A research proposal for learning to model evolving worlds and improve the representations that supply subsequent training material, combining numerical process histories, conceptual refinement, and care-oriented learning."
 preferred-citation:
   type: article
-  doi: "10.5281/zenodo.22389015"
-  url: "https://zenodo.org/records/22389015"
+  doi: "10.5281/zenodo.22421847"
+  url: "https://zenodo.org/records/22421847"
   title: "Life Simulation: Learning from Worlds and Their Construction"
   authors:
     - family-names: Westerberg

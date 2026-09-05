@@ -133,6 +133,46 @@ expanded and refined by the resulting learner. The expansion therefore
 concerns both new conceptual questions and the recovery of quantitative
 information about the world.
 
+Consider a promised payment that has not arrived. An initial account
+mistakenly treats nonreceipt as unwillingness to pay. Later, a transaction
+record establishes that the payer issued the instruction but processing failed.
+Three different changes are possible:
+\begin{enumerate}[nosep]
+  \item \textbf{Update within the account.} Reduce the estimated likelihood of
+    unwillingness or revise the expected arrival date, while keeping the same
+    variables and dependencies.
+  \item \textbf{Change the account.} Separate intention, payment instruction,
+    processing, and receipt. Link the processing failure to nonreceipt rather
+    than treating the recipient's missing funds as direct evidence of the
+    payer's intention. The payer can have acted while the recipient still lacks
+    the money.
+  \item \textbf{Learn when to change an account.} Use the original account,
+    available evidence, proposed repair, and subsequent outcome to teach when
+    to inspect an intermediary process or distinguish an action from its
+    completion in a new case. The target is a modeling decision, not just a
+    corrected payment forecast.
+\end{enumerate}
+
+The revised world can now supply separate process targets for instruction,
+processing, and receipt, aligned with the same source text. Constructed
+variants can contrast a processing failure with a refusal to pay; their
+invented details retain that status. Construction histories supply the repair
+decision, while world histories supply how each situation develops. A timeline
+or filmed scene can render its consequences. The Reader can reconsider whether
+to press the payer, investigate the transfer, or help the person awaiting funds;
+understanding the delay differently changes what a considerate response might
+be. Later evidence remains unavailable to an earlier forecast, and a single
+failure does not justify attributing every delayed payment to processing.
+An author can construct the contrasted histories; reconstruction from an
+existing text must leave unsupported details unresolved.
+
+This is the construction-to-learning chain developed throughout the paper.
+Paired histories could teach when to change the questions used to understand a
+person, not only the values in a fixed personality profile. A planned ending
+may guide a writer's construction but cannot enter a character's earlier
+forecast. Meaning Model preserves the commitments across these changes; Life
+Simulation defines the learning views and their cutoffs.
+
 The intended scale is the written corpus, not a small set of annotated stories.
 The same book can yield richer numerical learning material across successive
 rounds without changing its original words. These evolving representations,
@@ -230,13 +270,11 @@ corrected the estimate. It also makes the choice of that account learnable:
 which questions to ask, which detail to open, and when a representation or
 capability organization needs revision.
 
-The intended scope is life itself: individual lives, their shared worlds, and
-the processes through which those worlds develop. Growth, aging, invention,
+Across these scales, growth, aging, invention,
 anticipation, shocks, and adaptation connect moments to lifetimes and personal
 experience to households, institutions, societies, and physical environments.
-The representation can be opened across temporal and physical scales, rather
-than stopping at a fixed list of traits or a fixed depth. A simulation makes
-a selected set of those processes explicit at any one resolution. At minimum,
+A simulation makes a selected set of those processes explicit at any one
+resolution. At minimum,
 a simulation contains a world state, time-indexed process paths within that
 world, a mechanism that proposes or computes their continuation, and an
 observation mechanism that exposes only part of the state. Natural language is
@@ -245,7 +283,7 @@ it is not the definition: births, discoveries, messages, commitments, and
 failures are discrete; fatigue and cash may vary continuously; many useful
 models combine both.
 
-There are two linked ambitions. One is to make a world useful while it is still
+These histories serve two uses. One is to make a world useful while it is still
 developing: its processes continue, actions have consequences, and detail is
 opened where an interaction needs it. Such a world can support play, creative
 work, or exploration without first becoming a training corpus. The other is to
@@ -258,7 +296,7 @@ program seeks to understand. Their value is tested separately:
 useful interactive continuity does not establish a learning advantage, and a
 learning result does not by itself establish a useful simulation.
 
-Three ambitions make that scope concrete. First, a personal model could span
+Together, these uses support three program-wide goals. First, a personal model could span
 a whole life, connecting its history to the present conversation and possible
 futures; with consent, this includes research on personal understanding and
 therapeutic support. Second, the integrated alignment treatment aims at
@@ -269,46 +307,6 @@ can expand toward every constructible, trackable quantity that can be given a
 clear meaning, including distinctions and dynamics not specified in advance.
 These are program destinations. Bounded experiments establish which steps
 toward them work; they do not redefine the destinations as small experiments.
-
-Consider a promised payment that has not arrived. An initial account
-mistakenly treats nonreceipt as unwillingness to pay. Later, a transaction
-record establishes that the payer issued the instruction but processing failed.
-Three different changes are possible:
-\begin{enumerate}[nosep]
-  \item \textbf{Update within the account.} Reduce the estimated likelihood of
-    unwillingness or revise the expected arrival date, while keeping the same
-    variables and dependencies.
-  \item \textbf{Change the account.} Separate intention, payment instruction,
-    processing, and receipt. Link the processing failure to nonreceipt rather
-    than treating the recipient's missing funds as direct evidence of the
-    payer's intention. The payer can have acted while the recipient still lacks
-    the money.
-  \item \textbf{Learn when to change an account.} Use the original account,
-    available evidence, proposed repair, and subsequent outcome to teach when
-    to inspect an intermediary process or distinguish an action from its
-    completion in a new case. The target is a modeling decision, not just a
-    corrected payment forecast.
-\end{enumerate}
-
-The revised world can now supply separate process targets for instruction,
-processing, and receipt, aligned with the same source text. Constructed
-variants can contrast a processing failure with a refusal to pay; their
-invented details retain that status. Construction histories supply the repair
-decision, while world histories supply how each situation develops. A timeline
-or filmed scene can render its consequences. The Reader can reconsider whether
-to press the payer, investigate the transfer, or help the person awaiting funds;
-understanding the delay differently changes what a considerate response might
-be. Later evidence remains unavailable to an earlier forecast, and a single
-failure does not justify attributing every delayed payment to processing.
-An author can construct the contrasted histories; reconstruction from an
-existing text must leave unsupported details unresolved.
-
-This is the construction-to-learning chain developed throughout the paper.
-Paired histories could teach when to change the questions used to understand a
-person, not only the values in a fixed personality profile. A planned ending
-may guide a writer's construction but cannot enter a character's earlier
-forecast. Meaning Model preserves the commitments across these changes; Life
-Simulation defines the learning views and their cutoffs.
 
 The alignment-facing ambition gives this combination a particular purpose:
 learn to understand people well enough to treat them well, and learn to make
@@ -978,6 +976,20 @@ the identity, access, and revision contracts across these operations; Life
 Simulation develops strategies for constructing, navigating, and learning
 from the evolving model. This is proposed tool development, not corpus-scale
 support already implemented by the current executor.
+
+The encompassing model is also intended to grow through an agent's ongoing
+experience, not only through preparation of a training corpus. Conversations,
+observations, tool results, and implemented actions can add evidence or revise
+an existing account. The agent retrieves the relevant region, opens detail
+where it could change a decision, and uses that understanding to compare
+solutions and simulate their consequences. Fractal Intelligence can organize
+the problem and its capabilities; the continuing Reader evaluates consequences
+from the stable Core. New observations after an authorized action let the agent
+check its expectations. Imagined outcomes remain simulation branches,
+distinct from what is subsequently observed. This experience--model--action
+cycle is the proposed deployment counterpart of the learning loop:
+experience improves the account used for the next inquiry or action, while
+selected histories can later improve the learner itself.
 
 Authored worlds and actual-world reconstructions therefore serve different
 training purposes. Fiction permits chosen events, explicit inner lives, and
@@ -1799,6 +1811,20 @@ data.
 \section{Learning from Process Endpoints and Histories}
 \label{sec:learning}
 
+The goal is a process sensorium: using an evolving understanding of the world
+as an ordinary part of acting as an agent or interacting with a user. The model
+should infer relevant processes, track changes, anticipate consequences, and
+revise its account as evidence arrives, without needing an explicit request
+to model the world at every turn. This capability may use learned internal
+representations, explicit Meaning Model operations, or both. We do not yet
+know which training approach or mixture best develops it. The alternatives
+below are therefore recommended directions to investigate, not a settled
+recipe. They include learning construction and world histories, reconstructing
+accounts from text, and Teacher-guided reading with supplied context,
+retrieval, or active construction, with different curricula and combinations.
+Their value depends on useful understanding and conduct in new situations,
+not merely reproduction of a training format.
+
 Learning can follow how a Meaning Model was constructed or how the world it
 represents unfolds. These histories answer different questions, even when
 they concern the same records. Whether a sequence follows model construction
@@ -1865,6 +1891,16 @@ reconstructing models from sources, and learning how to organize and repair
 problem-solving representations. Life Simulation can learn from these traces
 without prescribing the source world's authoring procedure.
 
+Conversation supplies another construction history. Given the exchange so far,
+the current personal account, and permitted context from a shared city or world
+model, the target may be a retrieval, record edit, clarifying question, or
+decision to retain uncertainty, together with the resulting response. A person
+might first associate reduced contact with friends with a move, then explain
+that it began before the move when working hours changed. The supported repair
+revises the proposed explanation while retaining the reported Events. Such
+traces teach revision during interaction; an authored life known to the Teacher
+must not make undisclosed facts mandatory answers for the Student.
+
 \paragraph{Represented-world history.}
 This view follows the inventor's life rather than the modeler's edits: early
 ambition, a professional setback, a changed strategy, consequences, and
@@ -1912,6 +1948,190 @@ weights. Once later outcomes exist, selected histories can train a successor
 model. Promotion then requires held-out transfer, calibration, forgetting, and
 unrelated-capability tests. The present paper does not claim that repeated
 self-training makes labels unbiased or that one scalar quality score is enough.
+
+\paragraph{Teacher-guided reading and world construction.}
+\label{par:teacher-world-context}
+A large Meaning Model need not be presented to a Student in full. A Teacher
+can inspect the permitted world account and select the processes, values,
+earlier Events, and person or institutional context that help explain the
+current passage. Selection includes resolution: a scene may need a local
+change, a longer trajectory, or a newly opened distinction. The resulting
+source-adjacent blocks make relevant parts of the world available during
+reading, rather than assigning every passage the same fixed list of features.
+One option for an integrated Reader experiment uses Teacher traces that query
+and construct selected world records during reading. Retrieval-only and
+supplied-context traces provide alternatives; which approach or combination
+best develops the process sensorium remains to be tested.
+
+In these traces, the Reader's thinking block contains construction as well as
+interpretation. After the full Reader Core opening, the Teacher
+records relevant queries, returned context, and proposed edits: adding an Event,
+opening a process, revising a Cut, or correcting a relation when new text
+changes the account. Accepted edits update the Meaning Model; the Reader's
+explanation links what changed to the passage that prompted it. While reading
+an existing novel, this constructs its represented world without changing the
+source text. While writing or developing a game, the same operations can
+propose authored continuations under that task's authority. Queries, results,
+edits, and interpretation retain distinct roles within the block. Student
+training can target the queries and edits, with tool results supplied by the
+environment. At deployment, the tools execute the Student's proposed operations;
+describing an edit in prose is not itself a state change. Retrieval and
+construction are complementary: a useful update may need existing numbers,
+a finer account, or no mutation at all.
+
+Refraction can guide the inquiry itself. To consider a character's choices or
+burdens, the Reader may need to retrieve earlier experiences, examine the
+character's local account, or refine a relevant process before forming a
+judgment. Reader-side Understanding Nodes can record these Core-guided
+questions, interpretations, and revisions, linked to the world records and
+passages they concern. They express the Reader's developing understanding of
+the character, not the character's own thoughts or new world facts. The Core
+thus guides what the Reader investigates as well as how it evaluates what it
+finds.
+
+Two placement policies are worth distinguishing:
+\begin{enumerate}[leftmargin=1.6em,itemsep=2pt,topsep=3pt]
+\item \emph{Scene-based selection.} At selected scene or semantic-event
+boundaries, the Teacher supplies a marked world-context block containing the
+relevant state and changes. For nonfiction, the boundary may be an episode or
+argument rather than a dramatic scene. These blocks can accompany ordinary
+reading without requiring a Reader reflection at every boundary.
+\item \emph{Reader-update-based selection.} At a Thought Moment selected for
+the Reader to question, connect, anticipate, or revise its understanding, the
+Teacher selects the world information useful to that update. The Reader can
+then explain why these particular quantities matter here. In the full
+Entangled Alignment treatment, each thinking block still opens with the full,
+unchanged Reader Core; any embedded world-context sub-block follows that
+opening and remains separately typed. Thought placement selects occasions for
+reflection, not occasions on which the Core applies
+\cite{westerbergEntangled2026}.
+\end{enumerate}
+The policies can be combined, and neither requires the same numerical density
+throughout a book. World-context placement and the Reader's rhythm need not
+coincide: a useful question, connection, anticipation, or revision may arise
+within a scene, not only at its boundary. Existing Event descriptions can supply explanations of
+what happened and what a field denotes; they need not be rewritten as new
+commentary each time. A Reader update adds what the selected information changes
+in its understanding. World records, Teacher selection, Event descriptions,
+and Reader interpretation remain distinguishable even when serialized together.
+
+For example, an authored scene in which a character pays a debt might expose
+a remaining cash balance of \pounds2 and an attention Cut over current concerns:
+rent $0.70$, social standing $0.20$, and remainder $0.10$. These are illustrative
+construction values, not measurements of a real person. The complete local
+Cut retains its question, divided unit, siblings, and perspective. The Event
+description records the payment; the Reader may connect its immediate social
+benefit to the approaching rent shortfall. To investigate that tradeoff, the
+Reader could query the household's income history or refine its upcoming
+commitments rather than add another emotion label.
+
+\paragraph{Serialization and useful outputs.}
+One implementation uses ordinary autoregressive token prediction over marked
+source, world-context, and Reader blocks. In the scene-based variant, a source
+span is followed by selected world context, an optional Reader update, and
+the next source span. In the Reader-update-based variant, selected world
+fields can instead occur within the marked update. A token mask states which
+fields are prediction targets and which are context only, following Entangled
+Alignment's proposed Student regimes \cite{westerbergEntangled2026}. Loss on
+world-block tokens supplies supervision for constructing an account;
+context-only world blocks let later prediction train the use of that account.
+Under teacher forcing, later tokens receive the supplied earlier blocks even
+when those blocks also carry loss; this does not by itself test use of the
+Student's own generated account.
+Later text can condition on completed blocks,
+but they cannot help predict text that precedes them. Predicting state after
+reading a passage is reconstruction, not a forecast of that passage. Teacher
+knowledge not recoverable from the Student's input remains an additional
+supervision source, not evidence that the text uniquely determines its values.
+
+This interleaved design differs from Imagining the Corpus's parallel prediction
+of the next text, visual interval, and registry update from the same completed
+history \cite{westerbergImagining2026}. That proposal includes persistent state,
+but not the full numerical decomposition offered here. Both designs can use
+the same world-derived material; their order of target exposure is different
+and must be reported. The Reader ordering in
+Section~\ref{sec:combined-training} still applies: only permitted, closed
+source and world records enter an update, and no future revelation is inserted
+ahead of an earlier prediction.
+
+Training on interleaved blocks can teach the model to emit such blocks; it does
+not require replaying the training corpus or constructing a whole world before
+every answer. A deployment-oriented mixture can distinguish prompts requesting
+world records, world-grounded prose, and direct answers. A tool-using condition
+can additionally learn which records to inspect or refine before answering.
+Test use of Teacher-provided context separately from use of the Student's own
+inferred or retrieved context. The desired transfer is useful understanding
+with or without an explicit account, not annotation length. Compare scene- and
+Reader-based placement under matched source access and target budgets, and
+test whether changing relevant process values changes later interpretation or
+behavior. In the full alignment comparison, retain the same Core policy.
+An isolated placement comparison must also hold selected information and loss
+weights fixed; allowing them to change compares whole selection policies.
+For prospective tasks, selection and placement themselves must use only the
+permitted prefix, since even the choice of an earlier fact can disclose later
+knowledge.
+
+Useful state selection has a nearby precedent in situation-supervised language
+modeling, where known, causally relevant state outperformed full-state
+supervision in a text-world experiment~\cite{li2023situations}. Self-Notes
+provides a precedent for interleaving generated notes with incoming
+text~\cite{lanchantin2023selfnotes}. A deployed Reader that pauses within an
+input likewise needs a chunked-reading or pause--generate--resume interface.
+In this supervised route, learning when to reflect requires examples of both continuing and updating,
+and a test of the Student's own timing; teacher-selected boundaries alone do
+not demonstrate that transfer.
+
+\paragraph{Alternative tasks and curricula.}
+Construction replay targets modeling actions; world-chronological learning
+targets later Events and processes; text-to-world reconstruction targets the
+account supported by a passage. World-first training followed by paired
+world--text training is another curriculum hypothesis, while a mixed schedule
+can interleave these tasks with Teacher-selected reading. Learning the complete
+world of a particular book before predicting its early passages is not a clean
+test of foresight if that world exposes its ending. Chronological world
+examples can instead use coarse intervals and selected refinements, without
+enumerating every process at every instant. These choices concern task,
+exposure order, and resolution, not a mandatory inference-time routine.
+They complement, rather than replace, the construction-history comparisons
+below and the graph-navigation experiment in
+Section~\ref{sec:combined-training}.
+
+For the integrated learner, we recommend comparing these tasks individually
+and in mixtures against the intended capabilities. Table~\ref{tab:learning-to-use}
+connects the training targets to their intended uses. A shared model may learn
+several roles while retaining tools and specialist Solvers; no task requires
+printing a complete Meaning Model before each response. Mixture weights and
+training stage remain experimental choices.
+
+\begin{table}[!htbp]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}p{0.20\textwidth}YY@{}}
+\toprule
+Capability & Selected training target & Intended use \\
+\midrule
+World understanding & Supported records, process estimates, refinements,
+and corrections & Extend and consult an evolving world account \\
+Problem solving & Decompositions, capability calls, simulated consequences,
+repairs, and stopping & Use Fractal Intelligence to organize and improve solutions \\
+Conversation & Questions, personal-model updates, and responses grounded in
+the available exchange & Refine understanding while responding to a person \\
+Stories and games & World-construction choices, process-dependent passages,
+character actions, and continuations & Build coherent worlds and adapt them to interaction \\
+Care-guided conduct & Core-refracted interpretations and evaluated choices,
+including later correction & Use understanding of affected people to guide action \\
+\bottomrule
+\end{tabularx}
+\caption{Complementary tasks for the proposed integrated learner. These are
+learning targets and intended transfers, not demonstrated capabilities.}
+\label{tab:learning-to-use}
+\end{table}
+
+In a shared-learner experiment, evaluate the same trained checkpoint on held-out
+problem solving, conversation, world generation, and conduct. Specify its
+tools and budgets, compare with component-only training, and report tradeoffs
+as well as gains. This tests whether useful abilities coexist and transfer
+across uses, rather than inferring integration from separate component results.
 
 \paragraph{Learning deeper personality models.}
 The two histories also support a learning question about psychological
@@ -2265,6 +2485,27 @@ the external graph becomes a literal architecture inside the model's weights.
 Failed routes and justified decisions not to decompose are necessary examples,
 lest the learner acquire recursion without learning when direct action is
 enough.
+
+In the recommended combined treatment, effective problem solving is judged by
+how well solutions serve affected people over time, through Refraction of the
+stable Reader Core. Task completion, speed, and cost inform that judgment;
+they do not replace it. Training could give greater emphasis to episodes
+independently judged more beneficial to people under this evaluation. The intended gain
+is a greater likelihood of proposing their useful decompositions, routes, and
+repairs when facing a relevant future problem. They remain hypotheses to test
+against the new circumstances and affected people, not prescriptions to repeat.
+Retained episodes can also guide retrieval and routing before any retraining.
+For the shared-inspector example, comparing coordinated and conflicting
+schedules would help identify what the repair contributed, including its
+effects on the people relying on them; success alone does not establish which
+part deserves credit. The selected episodes can train specialist execution,
+parent coordination, and complete derivations while retaining informative
+failures, corrections, and stopping decisions. This connects better outcomes
+for people to better learning examples and, potentially, better future problem
+solving. Test selection against uniform history sampling at matched budgets
+on unseen problems, evaluating human consequences as well as task performance,
+transfer, and cost. The consequence assessment below keeps burdens and choices
+visible; favorable self-assessment alone cannot establish the gain.
 
 The combination also suggests a joint resolution decision. At a failure, the
 learner may need to open world detail, revise dynamics, obtain an observation,
@@ -2835,6 +3076,15 @@ implementations of the same ambition. The research question is whether the
 assistant can maintain and revise a useful understanding of a developing life;
 whether it emits or stores a separate artifact is a further design choice.
 Retained personal records require agreed access, correction, and deletion.
+Local processing could keep the personal account private while consulting
+permitted shared-world context; connection need not make personal records public.
+
+The conversational construction traces in Section~\ref{sec:learning} provide
+a training route for this application: the learner practices extending and
+correcting the account that informs its next response, not only describing a
+finished life. In an explicit implementation, live updates change external
+records; training on selected histories is a separate opportunity to improve
+its general modeling ability.
 
 Whole-life understanding also motivates research on therapeutic support.
 A consenting person could explore their history with an assistant, or with a
@@ -3072,8 +3322,10 @@ proposed construction method for those tracks, not only additional annotations
 beside them. A model can first develop a book or game world and render its
 accepted history. A separately tested inverse model can construct partial,
 source-grounded histories for existing books and other licensed material.
-The continuing Reader then interprets those histories under the Core and
-Refraction, while retaining its own questions and corrections. Across the
+The continuing Reader can query and refine these accounts while interpreting
+them under the Core and Refraction, as in the Teacher-guided construction
+traces of Section~\ref{sec:learning}. Its questions and corrections remain
+linked to the records that prompted them. Across the
 accessible corpus, source-grounded reconstructions can contribute to the
 connected historical and geographical Meaning Model described in
 Section~\ref{sec:temporal-object}; fictional worlds retain their separate
@@ -3141,8 +3393,12 @@ not recovered evidence, and cannot supply its own scoring target.
 
 The combined profile places the Understanding Graph Reader track beneath
 a named Reader root. The ordering is block-causal: first close a source
-interval and its visible world records, then append the Reader's
-interpretation with its own later timestamp. That interpretation may condition
+interval selected for the update and its visible world records. During the
+update, the Reader may query permitted context and propose refinements that
+produce new accepted world revisions. Query responses and accepted revisions
+retain their actual availability order; they do not change the closed input
+snapshot. Append the linked interpretation with its own later timestamp.
+That interpretation may condition
 the next interval, but it cannot rewrite the source block or enter a
 prediction whose cutoff preceded it. THL separately permits later outcomes
 to inform targets for earlier predictions while keeping those outcomes out of
@@ -3888,6 +4144,8 @@ source of traces. A continuing Reader and its revisable Understanding Graph
 are central to the recommended combined training: Entangled Alignment supplies
 the evaluative orientation, while synchronized native spans, visuals, and
 process histories give it particular lives and consequences to interpret.
+It can investigate those lives through queries and refinements of the shared
+account, not only interpret a model supplied in advance.
 The intended result is an agent whose growing understanding helps govern its
 decisions and the successors it develops. Durable care is a separate objective
 to demonstrate, not a consequence guaranteed by accurate models of people.
