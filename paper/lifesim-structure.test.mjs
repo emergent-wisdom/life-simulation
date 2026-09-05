@@ -95,24 +95,49 @@ test('the canonical paper is process-first and explicitly prospective', () => {
     source,
     /\\ewlongtitle\{Life Simulation\}\{Learning from Worlds and Their Construction\}/,
   );
-  assert.match(normalized, /A process path may be continuous, discrete-event, piecewise, stochastic, or hybrid/);
-  assert.match(normalized, /The path is required; a compact governing law is an optional hypothesis/);
-  assert.match(abstract, /This paper develops the method and specifies experiments for evaluating its learning hypotheses/);
+  assert.match(conclusion, /Continuous, discrete-event, and hybrid paths are the objects of study; compact laws must earn their place/);
+  assert.match(abstract, /the paper specifies learning objectives and experiments/);
   assert.doesNotMatch(source, /\\textbf\{Evidence status\.\}/);
   assert.match(executor, /https:\/\/github\.com\/emergent-wisdom\/meaning-model/);
   assert.match(executor, /does not yet provide a general hybrid event\/continuous-process runtime/);
   assert.match(executor, /joint predictor/);
 });
 
-test('the abstract leads with the linked learning system and its changing objects', () => {
-  assert.match(abstract, /Life Simulation proposes learning to maintain continuing worlds/);
-  assert.match(abstract, /Constructed worlds become rich linked learning material/);
-  assert.match(abstract, /connected corpus model with shared identities and retained disagreements/);
-  assert.match(abstract, /World-history supervision.*construction-history supervision.*personality model/);
-  assert.match(abstract, /Fractal Intelligence retains and reorganizes reusable capabilities/);
-  assert.match(abstract, /Alien-world search revises the categories/);
+test('the abstract leads with life simulation and its linked learning system', () => {
+  assert.match(abstract, /Life Simulation proposes simulating how lives and worlds unfold/);
+  assert.match(abstract, /text and other observations with numerical process histories and expressed understanding through the Meaning Model/);
+  assert.match(abstract, /world construction with inverse interpretation/);
+  assert.match(abstract, /Training on world histories.*training on construction histories.*choose, deepen, and revise/);
+  assert.match(abstract, /Training on world histories aims to teach.*construction histories aims to teach/);
+  assert.match(abstract, /Numerical coverage is open-ended.*compact mathematical expressions/);
+  assert.match(abstract, /whole life, developed and corrected during conversation/);
   assert.match(abstract, /recommended combined training.*continuing Reader.*evaluative orientation/);
-  assert.match(abstract, /Durable care remains an objective, not an automatic consequence/);
+  assert.match(abstract, /Deeper understanding of people can enable care or manipulation/);
+  assert.match(abstract, /Total Saturation carries the Reader Core across the corpus, while Refraction applies its evaluative orientation/);
+  assert.match(abstract, /The alignment benefit remains untested/);
+  assert.match(conclusion, /Fractal Intelligence develops reusable capability organization/);
+  assert.match(conclusion, /Alien-world search revises the categories directing mechanism exploration/);
+});
+
+test('the full ambition survives bounded experiments and implementation choices', () => {
+  assert.match(introduction, /whole life.*Total Saturation.*every constructible, trackable quantity/);
+  assert.match(introduction, /measurement, uncertain inference, or deliberate invention/);
+  assert.match(measurement, /Simulating a life during conversation/);
+  assert.match(measurement, /temporary working state.*learned internal simulation/);
+  assert.match(measurement, /therapeutic support.*not an established treatment/);
+  assert.match(alignment, /Total Saturation.*capability-forming learning across the proposed corpus/);
+  assert.match(functions, /Chaos, progressive detail, and limits of prediction/);
+  assert.match(functions, /recomposition contract.*dynamics supply the amplification/);
+  assert.match(functions, /retains uncertainty over compatible histories/);
+  assert.match(conclusion, /Life Simulation aims to simulate life itself/);
+  assert.match(abstract, /one encompassing Meaning Model.*world history and all texts ever written/);
+  assert.match(temporal, /one encompassing Meaning Model.*whole of world history.*all texts ever written/);
+  assert.match(temporal, /many distinguishable worlds and accounts inside it/);
+  assert.match(introduction, /Training can teach a model to generate process functions automatically/);
+  assert.match(introduction, /expanding the Meaning Model tool and developing better strategies for its use/);
+  assert.match(introduction, /hold the tools fixed while changing training, hold model weights fixed/);
+  assert.match(functions, /From numerical histories to compact laws/);
+  assert.match(functions, /measured reality, an inferred account of it, or an invented interpretation/);
 });
 
 test('the full-system comparison preserves operational coupling beyond component precedent', () => {
@@ -123,6 +148,21 @@ test('the full-system comparison preserves operational coupling beyond component
   assert.match(related, /do not establish global originality or a demonstrated learning advantage/);
   assert.match(conclusion, /changes the proposed objects and feedback of learning/);
   assert.match(structure, /full-system comparison/);
+});
+
+test('the related-work comparison separates scaling mechanisms from demonstrated advantage', () => {
+  for (const key of [
+    'parkerHolderFruchter2025genie3', 'simaTeam2025sima2',
+    'lecun2022autonomous', 'dawidLecun2023latent',
+    'assran2025vjepa2', 'zhang2025darwinGodel',
+  ]) {
+    assert.ok(related.includes(key), `missing comparison citation: ${key}`);
+    assert.ok(bibliography.includes(`@misc{${key},`), `missing reference: ${key}`);
+  }
+  assert.match(related, /Scaling coverage, resolution, and reuse/);
+  assert.match(related, /correlated supervision, not independent evidence/);
+  assert.match(related, /not a measured efficiency lead/);
+  assert.match(related, /holding observation requirements comparable/);
 });
 
 test('the paper keeps the approved asymmetric reading order', () => {
@@ -283,6 +323,11 @@ test('actor-local state and estimates retain perspective boundaries', () => {
   assert.match(temporal, /\\widehat\{\\mathcal M\}\^\{\*\}_\{o\\rightarrow a,j\}\(t\)/);
   assert.match(temporal, /World state, actor projection,\s+operative model, self-report, and observer hypotheses are separate objects/);
   assert.match(temporal, /A simulated decision for \$a\$ receives only records accessible/);
+  assert.match(temporal, /a character can have its own Meaning Model of the world as it understands it/);
+  assert.match(temporal, /may contain mistakes rather than merely omit inaccessible facts/);
+  assert.match(temporal, /Event processes can represent both an external account and these inner processes/);
+  assert.match(temporal, /execution trace must come from the simulated decision process, not a rationale written after the outcome/);
+  assert.match(temporal, /optional route toward highly realistic simulated characters, not a requirement/);
   assert.match(temporal, /equally informed latent baseline/);
   assert.match(temporal, /four epistemic objects must not collapse/);
   assert.match(temporal, /several observers' competing hypotheses/);
@@ -364,6 +409,9 @@ test('candidate functions face four tests and a direct-model baseline', () => {
     'the direct-model baseline must precede optional candidate-law families',
   );
   assert.match(functions, /Every candidate family below/);
+  assert.match(functions, /Dynamics may also be fitted to declared comparative Cut trajectories/);
+  assert.match(functions, /preserves the simplex, including the remainder/);
+  assert.match(functions, /attributed composition, not an absolute psychological measurement/);
   assert.match(functions, /path may be retained while the added law is rejected/);
   assert.match(functions, /This paper supplies no general discovery procedure/);
   assert.match(functions, /support from independently held-out observations/);
@@ -460,6 +508,11 @@ test('learning separates construction and world histories without collapsing evi
   assert.match(learning, /Learning deeper personality models/);
   assert.match(learning, /teach when to deepen an account, change its questions, request evidence, or keep it coarse/);
   assert.match(learning, /fixed coarse profile with selectively refined profiles/);
+  assert.match(learning, /Both receive the same evidence at the same cutoff/);
+  assert.match(learning, /A separate condition may acquire additional evidence.*distinguishing that benefit from refinement of the representation alone/);
+  assert.match(learning, /definition bundle resolved from an exact grounding-version digest/);
+  assert.match(learning, /All arms receive the same fragment and resolved definition bundle/);
+  assert.match(learning, /Realization, role and component alignment, and any accepted fit Cuts are withheld scoring targets, excluded from input views and retrieval/);
   assert.match(learning, /\\subsection\{A four-way construction-history curriculum\}/);
   assert.match(learning, /Holding chronological-world supervision fixed/);
   for (const curriculum of [
@@ -483,6 +536,8 @@ test('the Fractal Intelligence adapter and matched trace experiment remain', () 
   assert.match(learning, /cognitive proprioception.*learned ability to forecast and diagnose/);
   assert.match(learning, /actual candidate states, tool and solver invocations, gate decisions, resource use, and later outcomes/);
   assert.match(learning, /content-matched post-hoc rationale/);
+  assert.match(learning, /trace-specific process-awareness claim requires an incremental gain over that control/);
+  assert.match(learning, /Equal gains in both conditions do not distinguish execution-history learning from explanation-style learning/);
   assert.match(learning, /does not require exposing private chain-of-thought/);
   assert.match(learning, /execution graph may contain thousands of nodes/);
   assert.match(learning, /run or task episode contains invocation Events/);
@@ -535,11 +590,16 @@ test('the process sensorium and synthetic inversion are defined with the tempora
   assert.match(temporal, /A connected Meaning Model of the corpus/);
   assert.match(temporal, /Accounts of the actual world can connect to shared people, places, institutions, and Events where evidence supports the identification/);
   assert.match(temporal, /incompatible accounts remain contestable/);
-  assert.match(temporal, /Fictional and counterfactual worlds remain separate/);
+  assert.match(temporal, /Actual history, fictional and counterfactual worlds, and different perspectives retain distinct contexts/);
   assert.match(temporal, /Coverage can grow across world history and geography while resolution deepens selectively/);
   assert.match(temporal, /New sources can also revise the coarse account rather than merely fill it in/);
   assert.match(temporal, /Updating the external Meaning Model is distinct from training model weights/);
   assert.match(temporal, /selected snapshots and construction histories can subsequently supply training examples under their own cutoffs/);
+  assert.match(temporal, /corpus-scale extension of the Meaning Model tool/);
+  assert.match(temporal, /Incremental ingestion.*preserving unresolved matches and conflicting claims/);
+  assert.match(temporal, /Dependency tracking.*training examples need review or regeneration.*without overwriting the original material/);
+  assert.match(temporal, /distributed across machines while remaining one logically connected Meaning Model/);
+  assert.match(temporal, /proposed tool development, not corpus-scale support already implemented/);
   assert.match(temporal, /intended numerical intuition/);
   assert.match(temporal, /A pound balance retains its external unit/);
   assert.match(temporal, /Generation also provides a way to explore candidate mechanisms/);
@@ -569,6 +629,10 @@ test('the first reservoir experiment has a bounded training, inference, and reop
   assert.match(trainingExport, /equal update counts alone are not equal compute/);
   assert.match(trainingExport, /group-bootstrap interval/);
   assert.match(trainingExport, /oracle.*never student inputs/);
+  assert.match(trainingExport, /enumerates the \$50\$ possible initial states, retains those consistent with the visible history/);
+  assert.match(trainingExport, /generator-induced time-\$t\$ prior.*without conditioning on past observations/);
+  assert.match(trainingExport, /at the known cutoff \$t\$, ignoring gauge readings/);
+  assert.match(trainingExport, /does not assign a uniform prior to the currently feasible states/);
   assert.match(trainingExport, /A complete reservoir forecast row/);
   assert.match(trainingExport, /\\label\{app:reservoir-row\}/);
   assert.match(trainingExport, /illustrative arithmetic, not experimental evidence/);
@@ -679,7 +743,7 @@ test('related work retains trajectory and program-induction comparators', () => 
 });
 
 test('alignment claims and negative results remain scoped to their tested uses', () => {
-  assert.match(alignment, /some failures of assistance may arise/);
+  assert.match(alignment, /Satisfying an apparent request can miss what the person is trying to achieve/);
   assert.match(alignment, /could help distinguish/);
   assert.match(alignment, /worker's refusal of another shift/);
   assert.match(alignment, /Those are competing readings until evidence distinguishes them/);
@@ -694,6 +758,11 @@ test('alignment claims and negative results remain scoped to their tested uses',
 });
 
 test('the integrated alignment profile uses a continuing Reader and tests conduct rather than recital', () => {
+  assert.match(alignment, /A central premise of the alignment proposal is that acting with care is difficult without understanding what people want/);
+  assert.match(alignment, /progressively deeper understanding of people's inner worlds/);
+  assert.match(alignment, /Entangled Alignment already places people's perspectives, fears, values, and stakes within the Reader's developing understanding/);
+  assert.match(alignment, /Life Simulation extends that proposal with explicit, recursively refinable histories of inner processes/);
+  assert.match(alignment, /an inferred deeper want is not permission to override their expressed choices/);
   assert.match(alignment, /The combined training loop and its tests/);
   assert.match(alignment, /continuing synthetic Reader carries the same revisable Understanding Graph/);
   assert.match(alignment, /Each generated Reader thought block begins with the full Reader Core/);
@@ -725,9 +794,21 @@ test('the integrated alignment profile uses a continuing Reader and tests conduc
   assert.match(alignment, /nor does predicting the track establish that the Student has feelings or will act with care/);
   assert.match(alignment, /Improvement on prediction alone does not establish safer behavior/);
   assert.match(alignment, /A system can understand a vulnerability and exploit it/);
+  assert.match(temporal, /each character can have an Understanding Graph under that character's own understanding-process root/);
+  assert.match(temporal, /distinct from the constructor's deliberations and the alignment Reader's interpretation/);
+  assert.match(temporal, /uncertain, competing hypotheses about their thinking, not observations or transcripts/);
+  assert.match(temporal, /Uncertainty does not imply permanently weak prediction.*future superintelligent model/);
+  assert.match(alignment, /using that ability either to assist or to manipulate/);
+  assert.match(alignment, /aligned use could anticipate needs.*misaligned use could make coercion and exploitation more effective/);
+  assert.match(alignment, /reason for corpus-wide Refraction is to develop care alongside the ability to model inner worlds/);
+  assert.match(alignment, /Coverage and recital alone cannot ensure alignment/);
   assert.match(alignment, /ordering is block-causal/);
   assert.match(alignment, /first close a source interval/);
   assert.match(alignment, /cannot rewrite the source block or enter a prediction whose cutoff preceded it/);
+  assert.match(alignment, /Each Reader update is generated from its permitted prior state/);
+  assert.match(alignment, /cutoff-safe snapshot and separate targets/);
+  assert.match(alignment, /reused in parallel Student batches without exposing later Reader memories/);
+  assert.match(alignment, /Reader branches retain distinct histories; incompatible memories are not silently merged/);
   for (const claim of [
     'Understanding changes decisions',
     'The orientation is used rather than recited',
@@ -738,6 +819,22 @@ test('the integrated alignment profile uses a continuing Reader and tests conduc
   assert.match(alignment, /Recitation-only controls/);
   assert.match(alignment, /Preserved Core text or grounding hashes alone do not pass/);
   assert.match(alignment, /integrated Student experiment and its stability claims have not been demonstrated/);
+});
+
+test('linked-view training includes inquiry traversal without prescribing database order', () => {
+  assert.match(alignment, /trained to navigate this connected material/);
+  assert.match(alignment, /Three orders of access serve different tasks/);
+  assert.match(alignment, /storage order is not a prescribed learning curriculum/);
+  assert.match(alignment, /Several routes may resolve the same question/);
+  assert.match(alignment, /fixed retrieval policy with learned navigation using the same model, accessible graph, and query budget/);
+  assert.match(alignment, /Freeze the graph.*score answers and corrections independently/);
+  assert.match(alignment, /query cost and appropriate abstention on questions with insufficient evidence/);
+  assert.match(alignment, /same operations and budget for both policies, reporting refinement cost/);
+  assert.match(alignment, /authored completion remains a proposal, not recovered evidence, and cannot supply its own scoring target/);
+  assert.match(trainingExport, /Navigation examples additionally record the task/);
+  assert.match(trainingExport, /a completed traversal is not exposed as an earlier input/);
+  assert.match(trainingExport, /visual frame or interval references/);
+  assert.match(executor, /graph-navigation policy.*not an implemented capability/);
 });
 
 test('cross-program applications retain new domains and refer back to established learning loops', () => {
@@ -757,6 +854,9 @@ test('cross-program applications retain new domains and refer back to establishe
   assert.match(applications, /teach where to explore and when the search categories themselves need revision/);
   assert.match(applications, /Fractal Intelligence addresses how to organize a solution/);
   assert.match(applications, /not improved search quality or a trained exploration policy/);
+  assert.match(applications, /coherent consequences over time and a meaningful structural difference/);
+  assert.match(applications, /justify exploration without superiority on a task/);
+  assert.match(applications, /greater usefulness additionally requires a matched comparison on a declared task/);
   assert.match(learning, /Temporal Hindsight Learning supplies a complementary use of that history/);
   assert.match(learning, /westerbergTHL2026/);
   assert.match(learning, /Student still sees only the task, records, and options available at that earlier cutoff/);

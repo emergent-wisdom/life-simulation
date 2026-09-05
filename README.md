@@ -12,6 +12,9 @@ Read the [paper PDF](output/pdf/life-simulation.pdf), its [LaTeX source](paper/l
 or the [structure map](paper/LIFESIM-STRUCTURE.md). [Citation metadata](CITATION.cff)
 identifies the manuscript.
 
+The paper and source archive were published on [Zenodo](https://zenodo.org/records/22316212)
+on 5 September 2026: [doi:10.5281/zenodo.22316212](https://doi.org/10.5281/zenodo.22316212).
+
 The [file inventory](docs/FILE-INVENTORY.md) explains every uploaded file;
 [`RELEASE-MANIFEST.json`](RELEASE-MANIFEST.json) records exact sizes and hashes.
 
@@ -111,5 +114,4 @@ archives stay out. Exporting creates no commit, remote, or publication.
 
 Code is licensed under [MIT](LICENSE); authored papers and documentation are
 licensed under [CC BY 4.0](LICENSE-CONTENT). See [NOTICE](NOTICE) for scope and
-third-party attribution. Public repository and archival identifiers are added
-only when assigned.
+third-party attribution.

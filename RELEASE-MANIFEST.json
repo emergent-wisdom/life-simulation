@@ -9,8 +9,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 726,
-      "sha256": "d3ff3349ecc5ea24e63ea09cb4de65cc3b8d8d8f5ead2c1c05a82454775ddba3"
+      "bytes": 830,
+      "sha256": "c0218bb55f077dc00c1e8eee6869683e5cd9c918a97696275a91dae2bf356132"
     },
     {
       "path": "LICENSE",
@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5830,
-      "sha256": "51b0b2ee2b3b3ed7d799bc955561da7521a1ff43c00b361274fcacdbeae8c1dc"
+      "bytes": 5944,
+      "sha256": "6ac535c2062493004aa74701594374dd9e29c2b035c6e87d0f280cf4cff8953b"
     },
     {
       "path": "docs/FILE-INVENTORY.md",
@@ -54,13 +54,13 @@
     },
     {
       "path": "output/pdf/life-simulation.pdf",
-      "bytes": 438176,
-      "sha256": "aa4b4ddb86f0575e12ec09938e000edc71355151c1095195d79a532d629f94c9"
+      "bytes": 473584,
+      "sha256": "ee80e7702f31b23c67508d32f7fd3fd44a0e71ae0809d3cdc7a56577657ce9b9"
     },
     {
       "path": "paper/LIFESIM-STRUCTURE.md",
-      "bytes": 39566,
-      "sha256": "77faea0dd0e3aa431437ef8a326c7c596a089298de8dedb318c490efbc06157f"
+      "bytes": 47514,
+      "sha256": "158f4c7cf61a1d5eb1368f1a893502f7dbe80989dc563d02f0429d236fd5fe57"
     },
     {
       "path": "paper/emergentwisdom-longform.sty",
@@ -69,18 +69,18 @@
     },
     {
       "path": "paper/life-simulation.tex",
-      "bytes": 158750,
-      "sha256": "319344dcb1f656698c149d3ccd4ac55e2d28f2a9d04ea6232874c2527ae961bb"
+      "bytes": 192486,
+      "sha256": "36dbeb185bf5e2d406eb4fa3c8f0a7ab0e584a105a883aef8467dd66c7d349fd"
     },
     {
       "path": "paper/lifesim-structure.test.mjs",
-      "bytes": 54334,
-      "sha256": "6a8f139a23442e0f3d78a12e900daf80d42d75ff279cbae93bf0897e6cd9a118"
+      "bytes": 63526,
+      "sha256": "68b9c4b2d2fecfa8aef6b67b071557558af5659fafdc6671e040accae039f9b7"
     },
     {
       "path": "paper/references.bib",
-      "bytes": 98007,
-      "sha256": "e5183edd35889658354f7bf380ac35f7772f68fcf4c68465dd87317ebba683e8"
+      "bytes": 99210,
+      "sha256": "4fba5d4654bf1ba8d68fc9b1ee41326a2a7e315241168046317836488218e55f"
     },
     {
       "path": "paper/snapshots/meaning-model/README.md",

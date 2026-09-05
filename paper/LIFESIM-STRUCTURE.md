@@ -12,6 +12,57 @@ standalone release workflow.
 
 ## Primary job
 
+The destination is simulating life itself, not producing a particular artifact
+or restricting the program to its first experiments. Preserve these ambitions:
+
+- Whole-life personal understanding, developed and used during conversation,
+  including consented research on therapeutic support. Explicit temporary,
+  persistent, internal, and hybrid implementations are choices to compare.
+- Total Saturation across the proposed capability-forming corpus: a continuing
+  Reader, full Reader Core, and context-sensitive Refraction. Reduced trials
+  are experiments on components, not the definition of the integrated program.
+- An expanding range of constructible, trackable quantities, new distinctions,
+  finer histories, and tested interacting dynamics. Measured, inferred, and
+  authored values retain their different status.
+- Chaos as a candidate link between compatible fine detail and divergent later
+  histories, including uncertainty growth, predictability horizons, and
+  sensitivity-guided refinement. It does not replace semantic admissibility
+  or establish a universal law of life.
+
+Selective resolution is a computational method for pursuing the scope, not a
+ceiling on that scope. The introduction and conclusion state this distinction;
+the relevant dynamics, measurement, and alignment sections explain how.
+
+The corpus-wide destination is one encompassing Meaning Model, or a comparable
+representation, spanning world history and all texts ever written. People,
+Events, concepts, texts, interpretations, and fictional worlds belong inside
+that one model. Distinct world and perspective contexts preserve their status
+within it; they do not imply unrelated models for each book. Available,
+permitted sources determine current coverage, not the intended scope.
+
+The proposed corpus-scale tool extension supports incremental source integration,
+selective retrieval, refinement of histories and process functions, and dependency
+tracking for revising derived material without overwriting sources. Distributed
+storage and computation still serve one logically connected model. Meaning Model
+owns the identity, access, and revision contracts; Life Simulation develops the
+construction, navigation, and learning strategies. This is not implemented
+corpus-scale support.
+
+Capability has two complementary routes: training that teaches automatic
+generation, estimation, selection, and revision of process functions; and
+expansion of the Meaning Model tool with better strategies for its use.
+Tool operations, templates, queries, and solvers can help a fixed model, while
+training can improve use of a fixed tool. Evaluated simulations and successful
+and failed workflows connect the routes in a feedback loop. Tool availability
+does not establish the validity of a proposed function.
+
+Numerical histories can be a starting point rather than the final form of
+knowledge. Increasing capability may yield shorter mathematical expressions
+and candidate laws, reusable in tools and training. Preserve the distinction
+between compression of measured reality, inferred histories, and invented
+worlds; shortness and synthetic consistency alone do not establish a law of
+actual reality.
+
 Life Simulation connects two ambitions: worlds that continue and acquire detail
 where interaction needs it, and learners that understand the processes behind
 observations. A world may support play, creative work, or exploration before it
@@ -23,17 +74,23 @@ advanced by direct language-model judgment, ordinary simulation, an estimated
 function, or a mixture. The path is required. A compact law is optional and
 must beat simpler or direct-model baselines on a declared prospective test.
 
-The abstract leads with the coupled learning system and the objects it can
-learn to improve. Constructed worlds provide rich linked learning material;
-forward/inverse learning can connect this construction to a growing corpus
-model with shared identities and retained disagreement. A process sensorium
-predicts the next native text, image, audio, action, or measurement together
-with selected explicit process state. Paired world and construction histories
-teach temporal behavior and the choice or repair of representations, including
-personality models. Later evidence may label an earlier forecast but may never
-enter its input. A historical cutoff on a prompt alone cannot exclude later
-knowledge in pretrained weights; retrospective reconstruction and clean
-prospective testing must be reported separately.
+The abstract gives the core proposal: simulate continuing lives and worlds,
+learn through construction and inverse interpretation, and connect growing
+capability with care. It keeps the encompassing corpus ambition, expanding
+numerical coverage, whole-life conversational use, and Total Saturation.
+The individual companion mechanisms and detailed contracts remain in the body.
+The abstract motivates alignment before introducing its terms: deeper
+understanding can enable care or manipulation, so the recommended training joins
+that capability with the Reader Core's evaluative orientation through Total
+Saturation and Refraction. Learning benefits remain aims, not reported results.
+There, a process sensorium predicts the next native text, image, audio, action,
+or measurement together with selected explicit process state. Paired world
+and construction histories teach temporal behavior and the choice or repair
+of representations, including personality models. Later evidence may label
+an earlier forecast but may never enter its input. A historical cutoff on a
+prompt alone cannot exclude later knowledge in pretrained weights;
+retrospective reconstruction and clean prospective testing must be reported
+separately.
 
 A coequal learning hypothesis makes capability organization itself learnable.
 Meaning Model histories of world state and consequences connect to persistent,
@@ -234,10 +291,13 @@ scope nor the absence of an identical system establishes originality.
     the selection of construction and correction histories.
 21. **Cognitive proprioception is operational.** It means prediction and
     diagnosis from causally relevant task telemetry, not consciousness,
-    chain-of-thought access, or a post-hoc rationale.
+    chain-of-thought access, or a post-hoc rationale. A trace-specific claim
+    requires an incremental gain over a matched post-hoc-rationale control.
 22. **Reader order is block-causal.** A Reader interpretation is appended only
     after its source interval closes. It may affect later intervals and may
-    never rewrite or leak into the earlier source block.
+    never rewrite or leak into the earlier source block. Causally generated,
+    cutoff-safe snapshots can be reused in parallel Student batches; separate
+    Reader branches retain distinct histories rather than silently merging.
 23. **Cuts remain Event-parented and context-complete.** Every Cut is parented by
     an Event and inherits context through declared authority-parent paths to one
     nearest context root. Ambiguous authority is rejected; temporal ancestry is
@@ -272,7 +332,11 @@ scope nor the absence of an identical system establishes originality.
     independent joint likelihood. A complete forecast row separates visible
     input from private targets. Mirrored worlds preserve irreducible uncertainty;
     a bounded reopening test compares forecast distributions and returns
-    unresolved when retained history is insufficient. These are experiment
+    unresolved when retained history is insufficient. The oracle filters the
+    50 possible initial states against the visible history. The current-only
+    baseline uses the generator-induced time-t prior, marginalizing earlier
+    supply paths without conditioning on past observations, with time known.
+    These are experiment
     contracts without an implemented benchmark or a measured result.
 27. **Decisions and correction.** The human-facing ambition includes choosing
     to act, ask, wait, or decline, then comparing consequences with forecasts
@@ -393,7 +457,10 @@ comparison as a Life Simulation experiment.
    hazards, and learned world models; and
    distinguish evidence standards for software, energy, ecology, and scientific
    simulators. Preserve rival validity regions, scoped retirement, and the
-   known-law control before unknown-law search.
+   known-law control before unknown-law search. Human processes can have
+   numerical histories through declared comparative Cuts without an absolute
+   psychological measurement; any dynamics must preserve the simplex and the
+   attributed meaning of those shares.
 7. **Narrative as the First Controlled Laboratory.** Explain why authored
    hidden state and varied renderings are useful, while assigning all Book
    construction and story evaluation to the companion paper. This is a
@@ -406,10 +473,15 @@ comparison as a Life Simulation experiment.
    Use deeper personality modeling to illustrate the two histories together:
    learn when to refine, change questions, request evidence, or retain a coarse
    profile, rather than only fill a fixed template. Compare selective refinement
-   with a coarse profile at matched budgets; authored coherence is not human
+   with a coarse profile at matched budgets and the same evidence, separately
+   from the benefit of acquiring additional evidence; authored coherence is not human
    psychological validation. Link this to FI's learning of useful decompositions.
-   Retain the four-way construction-history curriculum, concept-recognizer testing, Fractal
-   Intelligence telemetry and its post-hoc-rationale control. The joint
+   Retain the four-way construction-history curriculum and concept-recognizer
+   testing. Recognizer inputs include the resolved definition bundle, not only
+   its digest; accepted Realizations, alignments, and fit Cuts are withheld
+   targets. Retain Fractal Intelligence telemetry and its post-hoc-rationale
+   control, requiring an incremental execution-history benefit for a trace-specific
+   claim. The joint
    process objective and inversion route are defined in the temporal-object
    section rather than being introduced here. Use the conflicting schedules
    to explain learning parent-level repair from locally successful children.
@@ -426,13 +498,42 @@ comparison as a Life Simulation experiment.
 10. **Understanding People and Alignment.** Keep episode-grounded intelligence
     and kindness, criterion/ipsative/norm frames, self-evaluation limits, the
     worker-refusal example, and decision and correction over time without a
-    wisdom primitive. Put the combined training loop before the detailed
+    wisdom primitive. State the central premise that caring action depends on
+    understanding what matters within people's lives, not only predicting their
+    behavior. EA already develops the Reader's understanding of their perspectives
+    and stakes; LS adds recursively refinable histories of inner processes.
+    Increasing capability should improve the questions and explanations, not only
+    fill a fixed personality profile. Dialogue and the person's corrections guide
+    refinement; inferred deeper wants do not override expressed choices.
+    Character-local Understanding Graphs can supply authored next-thought and
+    interpretation targets, separate from constructor and alignment Reader
+    graphs. A character's own Meaning Model represents its subjective world,
+    including errors; a deeper decision episode can record how it consults and
+    revises that model. External events, subjective understanding, and execution
+    are distinct views using the existing grammar. This depth is optional and
+    selective; an execution trace must come from the simulated process rather
+    than a post-hoc rationale. Transfer to real people yields hypotheses, not access to their
+    thoughts. Uncertainty does not cap future predictive accuracy: a
+    superintelligent model could predict very well, magnifying both the benefit
+    of aligned use and the danger of misaligned use. This capability can assist
+    or manipulate: connect the risk to
+    corpus-wide Refraction during capability formation, with conduct and
+    stability tests rather than an alignment guarantee from coverage alone.
+    Put the combined training loop before the detailed
     evaluative comparison frames. The loop connects EA's
     continuing Reader and Core/Refraction treatment with MM/LS histories, UG
     revisions, ITC synchronization, THL targets, Sema versions, and FI action.
     Connect source-grounded corpus contributions to the growing historical
     and geographical model; the Reader's graph records interpretation changes,
     not only additions of facts.
+    Make navigation among passages, Events, concepts, process histories,
+    Understanding Nodes, and visual intervals a proposed training target.
+    Distinguish world chronology, construction replay, and inquiry traversal;
+    Rust storage order is not the curriculum, and useful routes need not be unique.
+    Test fixed retrieval against learned navigation with the same model, graph,
+    and permitted access; score answers or corrections independently and count
+    query and refinement costs. Include insufficient-evidence cases and keep
+    authored refinement distinct from recovered evidence.
     Preserve the three tests of decisions, causal orientation use, and
     continuity through further learning, alongside manipulation and bias risks.
 11. **Applications and Cross-Program Loops.** Develop the game, music, alien
@@ -447,6 +548,9 @@ comparison as a Life Simulation experiment.
     proposed world-population governance and MM/LS training. Explain category
     revision and causal-relation redirection as active search control, with
     cutoff-safe search histories as proposed exploration-learning examples.
+    Coherent, structurally different mechanisms may enter exploration without
+    outperforming familiar ones; matched superiority is required for a utility
+    claim, not for inclusion in a diverse learning population.
     Connect that population-level exploration to FI's solution decomposition,
     without treating curator judgments as demonstrated search quality,
     and present STLM's no-bypass restriction as a separate architecture test.
@@ -471,10 +575,22 @@ comparison as a Life Simulation experiment.
     precedent: does coupling add anything beyond equivalent information and
     separate training tasks? Compare FI at the level of capability formation
     and reuse, and Alien at the level of exploration control, not only as trace
-    sources. The conclusion reconnects world utility, changing representations,
+    sources. Compare Genie 3/SIMA 2, LeCun's autonomous architecture and V-JEPA 2,
+    and the Darwin Godel Machine, crediting their demonstrated capabilities.
+    Explain the proposed scaling mechanisms: cross-source reuse, adaptive
+    temporal and semantic resolution, multiple aligned targets per history,
+    and learned refinement or compact functions. Do not present hierarchy or
+    avoiding pixel reconstruction as unique to this proposal, or broader scope
+    as proof of computational efficiency. Matched-budget comparisons include
+    acquisition and maintenance costs; the mechanisms can also be combined.
+    The conclusion reconnects world utility, changing representations,
     capability organization, and evaluative interpretation, and scopes negative
     findings to their tested uses.
 14. **Training Export appendix.** Define cutoff-safe synchronized process rows,
+    plus task-specific navigation actions and permitted responses, with source
+    and visual interval references. Future responses never enter earlier
+    inputs; report task outcomes and traversal costs rather than path identity.
+    Retain
     the full reservoir split, training, and scoring protocol, and one complete
     reservoir row with the training/inference sequence. Private targets remain
     masked at deployment; moving protocol detail does not change the experiment.
