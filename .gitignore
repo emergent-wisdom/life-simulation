@@ -14,10 +14,4 @@ paper/*.run.xml
 paper/*.toc
 paper/*.pdf
 
-*.sqlite-shm
-*.sqlite-wal
 *.tmp
-
-# Local unpublished material is never part of the release allowlist.
-/internal/
-/tmp/
