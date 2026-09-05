@@ -2,11 +2,30 @@
 
 ## Learning from Worlds and Their Construction
 
-Life Simulation proposes learning from how lives and worlds unfold and from
-the decisions used to construct those worlds. The Meaning Model connects
-events, numerical processes, concepts, text, and expressed understanding.
-Training on these linked histories aims to develop understanding, prediction,
-and care. The paper describes the proposal and experiments to test it.
+Life Simulation proposes learning to construct and refine numerical accounts
+of evolving worlds, aiming to develop a process sensorium. One expanding
+Meaning Model brings together collected world data, inferred missing values,
+and invented conceptual processes. Conceptual values gain meaning through
+comparison with other categories under a declared question; empirical values
+retain their units and uncertainty. Events, numerical histories, concepts,
+text, and expressed understanding are linked. Training on these accounts and
+their construction could improve the models that produce subsequent learning
+material.
+
+The long-term goal is an automated loop that progressively develops world
+histories, proposes and tests alternative decompositions, and learns from
+revisions. It covers people, economies, institutions, and environments.
+Narrative-world construction is the first controlled laboratory: tests ask
+whether invented numerical processes support coherent worlds and distinctive
+characters whose behavior genuinely depends on those processes. A secondary
+two-round pilot tests learned modeling decisions and downstream learning.
+The Book of Conditions provides a first narrative construction result;
+controlled comparisons and Student-training results remain prospective.
+More capable models could discover useful conceptual processes beyond current
+vocabularies. Combined training with Entangled Alignment aims to develop care
+alongside capability: Life Simulation deepens understanding of people's wants
+and needs, while the continuing Reader applies a stable evaluative Core.
+These learning and safety benefits remain to be tested.
 
 [Read the paper](output/pdf/life-simulation.pdf) ·
 [Zenodo](https://zenodo.org/records/22348228) ·

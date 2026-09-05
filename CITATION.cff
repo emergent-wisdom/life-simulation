@@ -10,7 +10,7 @@ authors:
   - family-names: Westerberg
     given-names: Henrik
     affiliation: Emergent Wisdom
-abstract: "A method and research proposal connecting continuing explicit worlds, native observations, process histories, representation revision, and learning."
+abstract: "A research proposal for learning to model evolving worlds and improve the representations that supply subsequent training material, combining numerical process histories, conceptual refinement, and care-oriented learning."
 preferred-citation:
   type: article
   doi: "10.5281/zenodo.22348228"
