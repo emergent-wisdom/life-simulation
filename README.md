@@ -28,12 +28,12 @@ and needs, while the continuing Reader applies a stable evaluative Core.
 These learning and safety benefits remain to be tested.
 
 [Read the paper](output/pdf/life-simulation.pdf) ·
-[Zenodo](https://zenodo.org/records/22348228) ·
+[Zenodo](https://zenodo.org/records/22389015) ·
 [LaTeX source](paper/life-simulation.tex)
 
 Henrik Westerberg · September 5, 2026
 
-DOI: [10.5281/zenodo.22348228](https://doi.org/10.5281/zenodo.22348228)
+DOI: [10.5281/zenodo.22389015](https://doi.org/10.5281/zenodo.22389015)
 
 ## Proposed integration
 
