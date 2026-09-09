@@ -14,4 +14,10 @@ paper/*.run.xml
 paper/*.toc
 paper/*.pdf
 
+*.sqlite-shm
+*.sqlite-wal
 *.tmp
+
+# Local working material is not part of this paper repository.
+/internal/
+/tmp/

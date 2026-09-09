@@ -1,22 +1,23 @@
 cff-version: 1.2.0
 url: "https://github.com/emergent-wisdom/life-simulation"
-date-released: 2026-09-05
 license:
   - MIT
   - CC-BY-4.0
-message: "Please cite the Life Simulation paper."
+message: "If you use this work, please cite the revised paper published on Figshare."
+doi: "10.6084/m9.figshare.33507805.v1"
+date-released: 2026-09-09
 title: "Life Simulation: Learning from Worlds and Their Construction"
 authors:
   - family-names: Westerberg
     given-names: Henrik
     affiliation: Emergent Wisdom
-abstract: "A research proposal for learning to model evolving worlds and improve the representations that supply subsequent training material, combining numerical process histories, conceptual refinement, and care-oriented learning."
+abstract: "A method and research proposal connecting continuing explicit worlds, native observations, process histories, representation revision, and learning."
 preferred-citation:
   type: article
-  doi: "10.5281/zenodo.22421847"
-  url: "https://zenodo.org/records/22421847"
   title: "Life Simulation: Learning from Worlds and Their Construction"
   authors:
     - family-names: Westerberg
       given-names: Henrik
   year: 2026
+  doi: "10.6084/m9.figshare.33507805.v1"
+  url: "https://figshare.com/articles/preprint/33507805"

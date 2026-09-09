@@ -1,10 +1,13 @@
 LATEXMK ?= latexmk
+
 BUILD_DIR := $(CURDIR)/build
 OUTPUT_DIR := $(CURDIR)/output/pdf
 
-.PHONY: all paper clean
+.PHONY: all build paper clean
 
 all: paper
+
+build: paper
 
 paper:
 	mkdir -p "$(BUILD_DIR)" "$(OUTPUT_DIR)"
