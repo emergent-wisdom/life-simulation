@@ -17,7 +17,11 @@ on 5 September 2026: [doi:10.5281/zenodo.22421847](https://doi.org/10.5281/zenod
 The revision dated 9 September 2026 (UTC) is published on
 [Figshare](https://figshare.com/articles/preprint/33507805):
 [doi:10.6084/m9.figshare.33507805.v1](https://doi.org/10.6084/m9.figshare.33507805.v1).
-The Zenodo DOI above identifies the earlier edition.
+This manuscript is the revision dated 15 September 2026 (UTC), a clarification
+and related-work revision with no new experimental evidence, published on
+[Zenodo](https://zenodo.org/records/22774007):
+[doi:10.5281/zenodo.22774007](https://doi.org/10.5281/zenodo.22774007).
+The DOIs above identify the earlier editions.
 
 The paper uses the Meaning Model as its selected world interface but does not
 own that grammar or its construction method. The companion Meaning Model paper

@@ -31,7 +31,7 @@
 \ewlongtitle{Life Simulation}{Learning from Worlds and Their Construction}
 \author{Henrik Westerberg\\
   \small{henrik.westerberg@emergentwisdom.org}}
-\ewreviseddates{September 5, 2026}{September 9, 2026}
+\ewreviseddates{September 5, 2026}{September 15, 2026}
 
 \begin{document}
 \raggedbottom
@@ -57,9 +57,10 @@ tracks, and expressed understanding.
 
 Narrative-world construction is the first controlled laboratory, not the scope
 limit. \emph{The Book of Conditions} is a completed book built through this
-method; its numerical dependence remains untested. Tests ask whether
-progressive decomposition improves world coherence and character
-distinctiveness, and whether generation depends on numerical histories.
+method; its numerical dependence remains untested. Proposed tests ask whether numerical histories shape generation, whether
+process histories improve prospective prediction beyond matched controls, and
+whether learning from construction histories improves the next corpus and the
+learner trained on it.
 Success would motivate reconstructing existing books and historical accounts,
 toward one connected representation of world history and all texts. This
 includes discovering new processes and recovering quantitative histories not
@@ -802,6 +803,7 @@ to pay its acquisition and maintenance cost. No present artifact trains or
 validates this faculty.
 
 \subsection{Synthetic bootstrap and generative inversion}
+\label{sec:generative-inversion}
 
 Synthetic semantic worlds provide the controlled first rung because the
 generator knows their accepted Events, structurally separated actor
@@ -1364,6 +1366,27 @@ initializations rather than rewarded merely for producing plausible macro
 stories~\cite{epsteinAxtell1996artificialSocieties,
 forrester1961industrialDynamics}.
 
+\paragraph{Executable programs.}
+A process may also be described by a program rather than a function: a
+protocol, an institutional procedure, the rules of a game, or a workflow with
+state, branching, waiting, and termination. The program attaches to the process
+it advances as a law does, with version, provenance, declared inputs, and tested
+scope; its internal state is not a record form. Two properties make programs
+useful here, although neither is exclusive to them: agent-based models also
+expose intermediate states, and a program may carry fitted parameters.
+Execution supplies checkable intermediate states, so a constructed world can be
+run rather than only described, which gives the inverse-learning route of
+Section~\ref{sec:generative-inversion} the same known ground truth as authored
+numbers. And a program's control structure is changed by editing rather than by
+refitting alone, so its repairs are construction records in the sense of
+Section~\ref{sec:construction-histories}, with the failing execution as the
+evidence that motivated the edit. Code as Worlds already constructs and revises
+executable worlds for physical questions~\cite{wang2026codeAsWorlds}, and the
+Solvers of Section~\ref{sec:solvers} apply the same idea to capabilities. A
+program must pass the four tests above, including intervention through altered
+inputs; one that reproduces a recorded history without predicting a held-out
+continuation earns no more than a stored path.
+
 \paragraph{Diffusion of innovations.}
 The spread of a discovery may be estimated with an adoption model whose hazard
 depends on exposure, network position, or earlier uptake. It attaches to the
@@ -1688,6 +1711,7 @@ extends the use of the grammar without requiring a new primitive for each
 capability.
 
 \subsection{World and construction histories}
+\label{sec:construction-histories}
 
 Learning can follow how a Meaning Model was constructed or how the world it
 represents unfolds. These histories answer different questions, even when
@@ -2030,6 +2054,7 @@ representation through which it understands a person, not merely the values
 inside it.
 
 \subsection{A four-way construction-history curriculum}
+\label{sec:history-curriculum}
 
 Holding chronological-world supervision fixed, test how construction and
 correction records are selected through four curriculum conditions:
@@ -2260,6 +2285,7 @@ capability, not just another pass through the original calculation. Training
 on that revision could teach when the available concepts themselves need repair.
 
 \subsection{Solvers and their execution in one world}
+\label{sec:solvers}
 
 Fractal Intelligence also supplies a prospective source of process
 histories: a Solver is invoked, proposes or follows a conceptual carve, receives
@@ -4188,6 +4214,68 @@ improve learning. Component comparisons and ablations test which mechanisms
 matter, while matched system comparisons must test whether their coupling adds
 anything beyond equivalent information and separate training tasks. Neither a
 larger list of uses nor the absence of an identical system establishes priority.
+
+\paragraph{What this paper proposes.}
+The organizing stance is that meaning has dynamics: the meaning present in a
+source at one time is related to the meaning present later, and that relation
+can be represented, learned, and used before the later interval is revealed.
+The stance is a modeling choice, not a claim about reality; the tests below
+decide where it pays. Quantification under it is provisional. A conceptual
+process may first receive a rough comparative share or rating, and the category
+earns a numerical track only if that track improves prospective prediction,
+recomposition, intervention, or transfer at its cost; otherwise it remains a
+description or a program. Within that stance the paper advances three testable
+hypotheses and one research aim.
+\begin{enumerate}[nosep]
+\item Aligned explicit process histories improve prospective prediction and
+  generation beyond a content-matched prose control and beyond time-permuted
+  and state-scrambled tracks, in separate information-matched and
+  resource-capped comparisons
+  (Sections~\ref{sec:representation-controls} and~\ref{sec:first-experiment}).
+\item Constructing worlds whose numerical processes shape the narrative, then
+  learning the inverse mapping on those worlds, supplies numerical histories
+  for existing texts that a subsequent learner can use
+  (Sections~\ref{sec:generative-inversion}, \ref{sec:narrative-laboratory},
+  and~\ref{sec:corpus-interior-learning}).
+\item Construction histories, the cutoff-safe records of proposals, repairs,
+  requests, and stopping decisions with typed rejection reasons, are a training
+  target distinct from world histories, and a constructor trained on them
+  improves the next corpus and the learner trained on it
+  (Sections~\ref{sec:construction-histories}, \ref{sec:history-curriculum},
+  and~\ref{sec:repair-pilot}).
+\item A learner can maintain one connected, revisable account of world history
+  and its texts, with a continuing Reader carrying the Core through that
+  account (Sections~\ref{sec:corpus-model} and~\ref{sec:alignment}).
+\end{enumerate}
+The first three have specified experiments in the sections cited, and none has
+been run. The fourth is the aim the first three serve; no end-to-end test of it
+exists yet, and no result supports it. Each predecessor above already supplies
+one or more of the mechanisms these hypotheses combine; the hypotheses concern
+what the combination adds under matched comparison, and they fail under the
+negative findings listed in Section~\ref{sec:representation-controls}.
+
+Training on recorded decision traces is the nearest precedent for the third
+hypothesis. ReAct interleaves reasoning and actions and also fine-tunes smaller
+models on such trajectories; FireAct and AgentTuning fine-tune language models
+on outcome-filtered agent trajectories across tasks; Reflexion keeps
+verbal self-corrections in an episodic memory rather than in weights; and
+SCoRe trains self-correction with multi-turn reinforcement learning on the
+model's own errors after finding supervised training on offline correction
+traces often
+insufficient~\cite{yao2023react,chen2023fireact,zeng2023agenttuning,shinn2023reflexion,kumar2024selfcorrect}.
+These methods already learn from failed attempts as well as successes:
+Reflexion retains reflections on failures across trials, and SCoRe trains on
+the model's own corrections. What construction histories add is the
+combination of typed rejection reasons attached to versioned edits of a
+persistent world, cutoff-safe by construction, with a loop in which the trained
+constructor's accepted repairs regenerate the corpus for a successor learner.
+The curriculum in Section~\ref{sec:history-curriculum} tests history selection
+and feedback, and the pilot in Section~\ref{sec:repair-pilot} tests the
+constructor, corpus, and learner loop; neither isolates persistence or typed
+rejection reasons on its own. The fourth curriculum
+condition, corrections of the trained system's own on-policy errors, is the
+closest point of contact with SCoRe's distribution-mismatch finding; it is a
+test to run, not an advantage to assume.
 
 DreamCoder alternates program induction, recognition, and library
 learning~\cite{ellis2021dreamcoder}. Solved tasks support abstraction discovery;
