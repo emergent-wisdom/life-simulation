@@ -725,6 +725,7 @@ They earn a role only if they improve later prediction or intervention relative
 to summaries, static traits, and an equally informed latent baseline.
 
 \subsection{A proposed process sensorium}
+\label{sec:process-sensorium}
 
 The larger learning claim is to predict native observations and selected
 explicit process state together. Given cutoff history $H_t$, a student may be
@@ -4220,15 +4221,22 @@ The organizing stance is that meaning has dynamics: the meaning present in a
 source at one time is related to the meaning present later, and that relation
 can be represented, learned, and used before the later interval is revealed.
 The stance is a modeling choice, not a claim about reality; the tests below
-decide where it pays. Quantification under it is provisional. A conceptual
+decide where it pays. The proposed contribution is to train a process
+sensorium across the corpus (Section~\ref{sec:process-sensorium}): a learned
+capacity to infer, maintain, and revise explicit numerical accounts of the
+processes underlying text and observations. World histories teach how those
+processes develop; construction histories teach which distinctions to
+introduce and how to repair their representations. The learned capability
+would then help construct the next training corpus. Quantification under the
+stance is provisional. A conceptual
 process may first receive a rough comparative share or rating, and the category
 earns a numerical track only if that track improves prospective prediction,
 recomposition, intervention, or transfer at its cost; otherwise it remains a
 description or a program. Within that stance the paper advances three testable
 hypotheses and one research aim.
 \begin{enumerate}[nosep]
-\item Aligned explicit process histories improve prospective prediction and
-  generation beyond a content-matched prose control and beyond time-permuted
+\item An early process-sensorium test: aligned explicit process histories
+  improve prospective prediction and generation beyond a content-matched prose control and beyond time-permuted
   and state-scrambled tracks, in separate information-matched and
   resource-capped comparisons
   (Sections~\ref{sec:representation-controls} and~\ref{sec:first-experiment}).
@@ -4242,7 +4250,11 @@ hypotheses and one research aim.
   target distinct from world histories, and a constructor trained on them
   improves the next corpus and the learner trained on it
   (Sections~\ref{sec:construction-histories}, \ref{sec:history-curriculum},
-  and~\ref{sec:repair-pilot}).
+  and~\ref{sec:repair-pilot}). The most concrete downstream comparison is the
+  pilot's second test: whether a history-trained constructor's regenerated
+  accounts, used as auxiliary targets, lower a fresh learner's loss on
+  untouched worlds relative to an endpoint-trained constructor's accounts. No
+  demonstrated downstream improvement would leave this link unsupported.
 \item A learner can maintain one connected, revisable account of world history
   and its texts, with a continuing Reader carrying the Core through that
   account (Sections~\ref{sec:corpus-model} and~\ref{sec:alignment}).
