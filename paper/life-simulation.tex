@@ -381,7 +381,8 @@ the role Life Simulation plays in connecting them. The combination is a
 research architecture, not nine finished modules that every experiment must
 instantiate. What unifies the architecture is a shared representational
 framework for worlds and people, concept definitions, documents, and accounts
-of the modeler's own activity (Section~\ref{sec:corpus-model}). Concepts can
+of the modeler's own activity, including Solvers and their executions
+(Section~\ref{sec:corpus-model}). Concepts can
 themselves be grounded in process models expressed in the same grammar as the
 situations they describe. These linked accounts retain distinct roles and
 evidence status while supporting coarse-to-fine construction with explicit
@@ -2215,6 +2216,7 @@ next search and category revision. These are proposals for learning how to
 organize competence and exploration, not only retaining their trajectories.
 
 \subsection{Conceptual search and revised problem frames}
+\label{sec:conceptual-search}
 
 Problem solving can be represented as a process before any special solver
 machinery is introduced. An episode preserves its task and information cutoff,
@@ -2400,6 +2402,7 @@ auditable through distinct bindings and separately rooted judgments; an executio
 and the generator's account is never the verdict.
 
 \subsection{Learning and repairing capability organization}
+\label{sec:capability-organization}
 
 \paragraph{Endpoint learning.}
 Accepted carves could train a model to propose useful decompositions directly.
@@ -4279,7 +4282,16 @@ and one research aim.
   pilot's second test: whether a history-trained constructor's regenerated
   accounts, used as auxiliary targets, lower a fresh learner's loss on
   untouched worlds relative to an endpoint-trained constructor's accounts. No
-  demonstrated downstream improvement would leave this link unsupported.
+  demonstrated downstream improvement would leave this link unsupported. The
+  same target extends to problem solving once Fractal Intelligence's Solvers,
+  decompositions, and executions are represented in the same world
+  (Section~\ref{sec:solvers}): capability organization and the categories that
+  guide exploration are then learned from those histories
+  (Sections~\ref{sec:capability-organization} and~\ref{sec:conceptual-search}),
+  as Fractal Intelligence itself proposes for learning from execution. The base
+  mechanisms belong to Fractal Intelligence and Ontology of the Alien; what is
+  proposed here is their representation and learning inside the continuing
+  world.
 \item A learner can maintain one connected, revisable account of world history
   and its texts, with a continuing Reader carrying the Core through that
   account (Sections~\ref{sec:corpus-model} and~\ref{sec:alignment}).
