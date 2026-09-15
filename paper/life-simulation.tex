@@ -126,7 +126,10 @@ The text and linked numerical histories then become training material.
 The proposed contribution is to train a process sensorium across the corpus
 (Section~\ref{sec:process-sensorium}): a learned capacity to infer, maintain,
 and revise explicit numerical accounts of the processes underlying text and
-observations. World histories teach how those processes develop; construction
+observations. Those accounts are decomposed across concepts by declared
+questions and across time by progressive resolution, and connected into one
+revisable account of world history and its texts, with factual, fictional, and
+counterfactual histories kept distinct. World histories teach how those processes develop; construction
 histories teach which distinctions to introduce and how to repair their
 representations. The learned capability would then help construct the next
 training corpus, re-estimating values, adding useful distinctions, resolving
@@ -376,7 +379,22 @@ during construction; Meaning Model still governs their acceptance and rendering.
 Table~\ref{tab:program-roles} identifies the nine companion contributions and
 the role Life Simulation plays in connecting them. The combination is a
 research architecture, not nine finished modules that every experiment must
-instantiate. Temporal Hindsight Learning is a supported training approach, not
+instantiate. What unifies the architecture is a shared representational
+framework for worlds and people, concept definitions, documents, and accounts
+of the modeler's own activity (Section~\ref{sec:corpus-model}). Concepts can
+themselves be grounded in process models expressed in the same grammar as the
+situations they describe. These linked accounts retain distinct roles and
+evidence status while supporting coarse-to-fine construction with explicit
+revision, joint prediction of native text and process state, and learning how
+to construct and repair the representations themselves. Stable identities
+connect records across revisions; Sema identifies exact definition and
+grounding versions. The proposed training loop would return that learned
+capacity to the construction of subsequent training material. Existing
+construction artifacts demonstrate parts of the workflow, not this end-to-end
+learned capability. Section~\ref{sec:related} names the precedents for each
+part.
+
+Temporal Hindsight Learning is a supported training approach, not
 a prerequisite for simulation or learning from world histories. Preventing
 future evidence from entering an earlier prediction remains necessary whether
 or not that approach is used.
@@ -4190,7 +4208,18 @@ valence and arousal pseudo-labels for 801 Gutenberg stories comprising 101,529
 sentences and train another model on that augmented
 corpus~\cite{christ2024emotionalTrajectories}. This directly precedes numerical
 enrichment of existing stories, although its objective is affect prediction
-rather than joint language/world-state generation. Code as Worlds constructs
+rather than joint language/world-state generation. Together with the
+sentiment-arc and relationship-trajectory work above, this establishes
+precedents for numerical trajectories through narratives, including learned
+relationship descriptors and emotion-guided story generation. The proposed
+generalization is a revisable, multiscale process account spanning sources:
+the model learns to introduce and revise the processes tracked, identities
+can persist across sources, and values carry units or a declared comparison
+question with a remainder, while evidence, inference, and invention remain
+distinct. World and construction histories train a learner that can help
+construct and revise the next corpus.
+
+Code as Worlds constructs
 executable physical worlds from underspecified text using physical priors and
 default conditions, then derives numerical training targets from simulated
 trajectories~\cite{wang2026codeAsWorlds}. It is a close precedent for supplying
@@ -4258,10 +4287,12 @@ and one research aim.
 \end{enumerate}
 The first three have specified experiments in the sections cited, and none has
 been run. The fourth is the aim the first three serve; no end-to-end test of it
-exists yet, and no result supports it. Each predecessor above already supplies
-one or more of the mechanisms these hypotheses combine; the hypotheses concern
+exists yet, and no result supports it. Each predecessor in this section already
+supplies one or more of the mechanisms these hypotheses combine; the hypotheses concern
 what the combination adds under matched comparison, and they fail under the
-negative findings listed in Section~\ref{sec:representation-controls}.
+negative findings listed in Section~\ref{sec:representation-controls}. The
+comparisons that follow concern the third hypothesis and the invention of the
+tracked vocabulary.
 
 Training on recorded decision traces is the nearest precedent for the third
 hypothesis. ReAct interleaves reasoning and actions and also fine-tunes smaller
