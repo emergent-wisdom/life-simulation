@@ -17,15 +17,11 @@ on 5 September 2026: [doi:10.5281/zenodo.22421847](https://doi.org/10.5281/zenod
 The revision dated 9 September 2026 (UTC) is published on
 [Figshare](https://figshare.com/articles/preprint/33507805):
 [doi:10.6084/m9.figshare.33507805.v1](https://doi.org/10.6084/m9.figshare.33507805.v1).
-The revision dated 15 September 2026 (UTC), a clarification and related-work
-revision, is published on [Zenodo](https://zenodo.org/records/22774007):
+The revision dated 15 September 2026 (UTC) is published on
+[Zenodo](https://zenodo.org/records/22774007):
 [doi:10.5281/zenodo.22774007](https://doi.org/10.5281/zenodo.22774007).
-The consolidation into twelve sections with six reviewed additions was first
-deposited on [Zenodo](https://zenodo.org/records/22801255):
-[doi:10.5281/zenodo.22801255](https://doi.org/10.5281/zenodo.22801255).
-This manuscript is the revision dated 16 September 2026 (UTC), which states the
-construction-learning proposal more directly and adds no new experimental
-evidence, published on [Zenodo](https://zenodo.org/records/22802924):
+This manuscript is the revision dated 16 September 2026 (UTC), published on
+[Zenodo](https://zenodo.org/records/22802924):
 [doi:10.5281/zenodo.22802924](https://doi.org/10.5281/zenodo.22802924).
 The DOIs above identify the earlier editions.
 
