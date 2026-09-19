@@ -2185,6 +2185,25 @@ route~\cite{westerbergSTLM2026}. That restriction tests a different claim from
 having two cooperating networks; it can discard useful information if the
 intermediate account is insufficient for the requested output.
 
+\paragraph{Architectural and training coupling for alignment.}
+The combined alignment proposal distinguishes architectural coupling from
+training coupling. Architectural coupling concerns shared learned
+representations or functional dependencies among process understanding,
+care-guided judgment, and decisions; training coupling concerns developing
+these abilities across the relevant networks through Core-guided construction
+and revision histories.
+Separate networks can each receive such training, while sharing parameters
+alone does not establish that care is necessary for capability. The safety
+aim is to make useful understanding difficult to retain or repurpose after
+its learned care orientation has been reduced or bypassed
+(Section~\ref{sec:combined-training}). A separately reusable predictor is
+therefore a potential separation point to examine, not automatically an
+unaligned component. Neither network count nor common training establishes
+the intended dependence: the comparison must measure which relevant
+capabilities remain when care is reduced or a component is used separately.
+Resistance to this separation would not by itself prevent another system from
+misusing exported accounts.
+
 \begin{figure}[!htbp]
 \centering
 \begin{tikzpicture}[
@@ -3775,6 +3794,13 @@ using failure on the skill itself to certify care removal. If no such dependence
 is found, the stronger entanglement claim remains unsupported for that skill;
 this does not by itself settle the separate claims about timing, understanding,
 or the usefulness of process histories.
+
+The architectural comparison in Section~\ref{sec:training-design} extends this
+question to components used separately, with retained capability and care
+assessed independently at matched information and intervention budgets.
+Retaining the tested capability while losing care counts against resistance
+to separation for that configuration; ordinary task failure alone does not
+demonstrate such resistance.
 
 \emph{Total Saturation} places Reader updates throughout capability-forming
 learning across the proposed corpus. Every generated Reader thinking block
