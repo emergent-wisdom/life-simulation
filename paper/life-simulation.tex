@@ -31,7 +31,7 @@
 \ewlongtitle{Life Simulation}{Learning from Worlds and Their Construction}
 \author{Henrik Westerberg\\
   \small{henrik.westerberg@emergentwisdom.org}}
-\ewreviseddates{September 5, 2026}{September 16, 2026}
+\ewreviseddates{September 5, 2026}{September 19, 2026}
 
 \begin{document}
 \raggedbottom
@@ -2155,6 +2155,174 @@ problem solving, conversation, world generation, and conduct. Specify its
 tools and budgets, compare with component-only training, and report tradeoffs
 as well as gains. This tests whether useful abilities coexist and transfer
 across uses, rather than inferring integration from separate component results.
+
+\paragraph{Shared and cooperating networks.}
+The discussion separates choices about network organization, information
+routing, supporting components, and account updates; a single implementation
+can combine options across these dimensions.
+The training targets do not determine how many neural networks implement them.
+Figure~\ref{fig:learner-architectures} contrasts two candidate configurations.
+A shared learner can predict text and Meaning Model records or operations
+through a common backbone with distinct output interfaces. A modular learner
+can instead use separately parameterized text and Meaning Model networks,
+optionally joined by a visual network. Each receives the same permitted corpus
+prefix and selected context, including the current account, rather than the
+whole corpus at once. The Meaning Model network predicts structured accounts
+or candidate updates; it is distinct from the stored graph and its executor.
+Either configuration can learn from world histories, construction histories,
+or both. Structured outputs may be serialized as tokens or produced through
+dedicated typed interfaces; this is a separate choice from weight sharing.
+
+Cooperation can occur through completed shared history, joint training, or
+explicit exchanges of predicted states and proposals. A shared backbone may
+support transfer between language and process modeling, but their objectives
+may also interfere. Separate networks allow specialized capacity and training
+schedules, at the cost of coordination, interface errors, and potentially
+additional computation. Neither configuration ensures that language uses the
+account. Compulsory mediation is a further option: an STLM-style readout
+receives only the predicted process representation, without a direct text
+route~\cite{westerbergSTLM2026}. That restriction tests a different claim from
+having two cooperating networks; it can discard useful information if the
+intermediate account is insufficient for the requested output.
+
+\begin{figure}[!htbp]
+\centering
+\begin{tikzpicture}[
+  x=1cm,y=1cm,>=Stealth,
+  box/.style={draw,rounded corners=2pt,align=center,font=\footnotesize,inner sep=4pt},
+  input/.style={box,text width=6.1cm,minimum height=0.8cm,fill=black!3},
+  net/.style={box,text width=1.68cm,minimum height=0.9cm,fill=black!7},
+  outputbox/.style={box,text width=1.68cm,minimum height=1.15cm},
+  optional/.style={dashed},
+  flow/.style={->,semithick},
+  title/.style={font=\small\bfseries,align=center}
+]
+\node[title] at (0,0) {(a) Shared predictive network};
+\node[input] (a-input) at (0,-0.8) {Permitted corpus prefix and selected context\\Current accepted account; optional visual history};
+\node[box,text width=4.6cm,minimum height=0.9cm,fill=black!7] (a-net) at (0,-2.55) {Shared predictive backbone\\with separate output heads};
+\node[outputbox] (a-text) at (-2.2,-4.25) {Next text};
+\node[outputbox] (a-mm) at (0,-4.25) {Account records\\or operations};
+\node[outputbox,optional] (a-vis) at (2.2,-4.25) {Visual prediction\\(optional)};
+\path (a-net.south) -- (a-mm.north) coordinate[midway] (a-branch);
+\draw[flow] (a-input) -- (a-net);
+\draw[flow] (a-net.south) -- (a-branch) -| (a-text.north);
+\draw[flow] (a-net) -- (a-mm);
+\draw[flow,optional] (a-net.south) -- (a-branch) -| (a-vis.north);
+\begin{scope}[xshift=7.1cm]
+\node[title] at (0,0) {(b) Cooperating predictive networks};
+\node[input] (b-input) at (0,-0.8) {Permitted corpus prefix and selected context\\Current accepted account; optional visual history};
+\node[net] (b-text) at (-2.2,-2.55) {Text\\network};
+\node[net] (b-mm) at (0,-2.55) {Meaning Model\\network};
+\node[net,optional] (b-vis) at (2.2,-2.55) {Visual network\\(optional)};
+\node[outputbox] (b-text-out) at (-2.2,-4.25) {Next text};
+\node[outputbox] (b-mm-out) at (0,-4.25) {Account records\\or operations};
+\node[outputbox,optional] (b-vis-out) at (2.2,-4.25) {Visual prediction\\(optional)};
+\path (b-input.south) -- (b-mm.north) coordinate[midway] (b-branch);
+\draw[flow] (b-input.south) -- (b-branch) -| (b-text.north);
+\draw[flow] (b-input) -- (b-mm);
+\draw[flow,optional] (b-input.south) -- (b-branch) -| (b-vis.north);
+\draw[flow] (b-text) -- (b-text-out);
+\draw[flow] (b-mm) -- (b-mm-out);
+\draw[flow,optional] (b-vis) -- (b-vis-out);
+\end{scope}
+\node[box,text width=13.2cm,minimum height=0.8cm,fill=black!3] (commit) at (3.55,-6.0) {Check proposed updates; apply accepted operations through the executor.\\Retain completed outputs and accepted state as context for the next step.};
+\path (a-mm.south) -- (a-mm.south |- commit.north) coordinate[midway] (a-join);
+\path (b-mm-out.south) -- (b-mm-out.south |- commit.north) coordinate[midway] (b-join);
+\draw[semithick] (a-text.south) |- (a-join);
+\draw[semithick] (a-mm.south) -- (a-join);
+\draw[semithick,optional] (a-vis.south) |- (a-join);
+\draw[flow] (a-join) -- (a-mm.south |- commit.north);
+\draw[semithick] (b-text-out.south) |- (b-join);
+\draw[semithick] (b-mm-out.south) -- (b-join);
+\draw[semithick,optional] (b-vis-out.south) |- (b-join);
+\draw[flow] (b-join) -- (b-mm-out.south |- commit.north);
+\end{tikzpicture}
+\caption{Candidate parameter-sharing configurations, not implemented learners.
+Dashed components are optional. Both layouts retain a direct text-history
+route. The shared context makes previous outputs available across tracks;
+any additional within-step exchange of predicted proposals needs a declared
+schedule and cannot expose withheld target fields. The bottom box governs
+explicit record updates, not the context-only learning condition.}
+\label{fig:learner-architectures}
+\end{figure}
+
+\paragraph{Direct text-to-account prediction.}
+A dedicated text-to-account model could map a supplied story directly to
+candidate Meaning Model records, without a separate text-generating LLM or an
+explicit tool-call dialogue. For safety-oriented use, the proposed training
+route would draw on care-guided Reader construction and revision histories,
+following Entangled Alignment (Section~\ref{sec:combined-training}), rather
+than optimize account reconstruction alone. Whether this preserves attention
+to the people represented must be tested in downstream decisions. Even a
+well-aligned constructor cannot ensure that another system uses its accounts
+responsibly, so access and action constraints remain necessary.
+
+\paragraph{Smaller helpers and persistent state.}
+A helper network could infer a local account from a supplied situation, link
+mentions to existing identities, estimate selected process values, or propose
+a refinement or repair. The main learner can request these bounded operations
+instead of reconstructing the entire world. Helpers could be trained on
+accepted examples or distilled from a larger constructor; whether smaller
+models suffice is an empirical question. Their outputs remain candidates,
+with evidence, uncertainty, and unresolved alternatives retained. Typed output
+does not establish truth or authorize mutation: the executor checks applicable
+record contracts before committing an accepted update. Helper-only improvements
+must be distinguished from changes learned by the main model.
+
+\paragraph{Automatic updates and explicit tool calls.}
+An explicit tool call is not the only way to change the account. A typed
+output interface could emit candidate record changes that the host validates
+and applies automatically under a declared acceptance policy, without a
+separate language-model tool-call turn. Raw numbers alone are insufficient: each update
+must identify its records, meaning, provenance, and base version, and
+distinguish a new world event from a correction to an earlier interpretation.
+Explicit Reader tool calls expose the query, proposed change, and reason in
+the construction trace. Automatic proposals can also be recorded there; the
+distinction is whether a separate tool-call turn is required.
+The routes can be combined, with routine
+updates handled directly and conflicts referred for further inquiry. The
+Reader Core belongs to the Reader's training and reasoning, not to the tool
+itself; neither interface makes an update aligned merely by executing it.
+In the integrated alignment condition, automatic proposals must be evaluated
+for the same care-guided conduct and respect the same access and acceptance
+boundaries as explicit calls, including when to abstain or request review.
+
+\paragraph{Optional visual perception and action.}
+Imagining the Corpus motivates an additional visual or schematic track; its
+core uses shared prediction, while the separate visual network in
+Figure~\ref{fig:learner-architectures} is an alternative considered here
+\cite{westerbergImagining2026}. Numerical process learning need not include
+that track. A visual component could both encode observed frames into
+candidate account updates and predict future visual states from the account.
+Receiving real video requires a trained perceptual interface and tests on
+held-out observations, not merely rendering pictures from text. Acting from
+video further requires a policy or controller connected to an action interface,
+feedback about action consequences, and evaluation under partial observation.
+Synthetic world training could support
+those capabilities; it does not demonstrate them.
+
+\paragraph{Causal interfaces and architectural comparisons.}
+Weight sharing is independent of whether targets are predicted in parallel
+or interleaved. For parallel next-event prediction, each network and every
+within-step message must depend only on the permitted prefix, context, and
+its own or other networks' predictions, never another track's withheld
+ground-truth continuation. A sequential reconstruction task may read an
+observed passage before inferring its account, but that account cannot count
+as a forecast of the same passage. Exchange order, training losses, frozen
+components, and context-only fields must be declared. Free-running tests use
+the learners' own accounts, so supplied correct context cannot hide error
+accumulation.
+
+Compare shared and modular learners on the same histories and held-out tasks,
+with helpers and the visual track separately ablated. Match information and
+training and inference budgets where possible, and report total parameters,
+helper cost, latency, and unmatched differences. Test account reconstruction,
+repair, and later text prediction, including whether a relevant correction to
+the account changes the answer appropriately and an irrelevant edit leaves it
+stable. Compare predicted accounts with supplied correct accounts to locate
+construction failures. These comparisons ask whether specialization or shared
+learning improves useful process understanding, not whether either architecture
+merely produces a valid graph.
 
 \paragraph{Learning deeper personality models.}
 The two histories also support a learning question about psychological

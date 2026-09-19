@@ -3,9 +3,9 @@ url: "https://github.com/emergent-wisdom/life-simulation"
 license:
   - MIT
   - CC-BY-4.0
-message: "This manuscript is the revision dated September 16, 2026 (UTC), published on Zenodo as doi:10.5281/zenodo.22802924. Earlier editions: Zenodo 10.5281/zenodo.22421847 (September 5, 2026), Figshare 10.6084/m9.figshare.33507805.v1 (September 9, 2026) and Zenodo 10.5281/zenodo.22774007 (September 15, 2026)."
-doi: "10.5281/zenodo.22802924"
-date-released: 2026-09-16
+message: "This manuscript is the revision dated September 19, 2026 (UTC), published on Zenodo as doi:10.5281/zenodo.22846315. Earlier editions: Zenodo 10.5281/zenodo.22421847 (September 5, 2026), Figshare 10.6084/m9.figshare.33507805.v1 (September 9, 2026), Zenodo 10.5281/zenodo.22774007 (September 15, 2026), and Zenodo 10.5281/zenodo.22802924 (September 16, 2026)."
+doi: "10.5281/zenodo.22846315"
+date-released: 2026-09-19
 title: "Life Simulation: Learning from Worlds and Their Construction"
 authors:
   - family-names: Westerberg
@@ -19,5 +19,5 @@ preferred-citation:
     - family-names: Westerberg
       given-names: Henrik
   year: 2026
-  doi: "10.5281/zenodo.22802924"
-  url: "https://zenodo.org/records/22802924"
+  doi: "10.5281/zenodo.22846315"
+  url: "https://zenodo.org/records/22846315"
