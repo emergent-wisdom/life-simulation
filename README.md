@@ -23,10 +23,14 @@ The revision dated 15 September 2026 (UTC) is published on
 The revision dated 16 September 2026 (UTC) is published on
 [Zenodo](https://zenodo.org/records/22802924):
 [doi:10.5281/zenodo.22802924](https://doi.org/10.5281/zenodo.22802924).
-This manuscript is the revision dated 19 September 2026 (UTC), published on
+The revision dated 19 September 2026 (UTC) is published on
 [Zenodo](https://zenodo.org/records/22846315):
 [doi:10.5281/zenodo.22846315](https://doi.org/10.5281/zenodo.22846315).
 These DOI links identify individual editions.
+This manuscript is the revision dated 25 October 2026 (UTC), published on
+Zenodo under the concept DOI
+[doi:10.5281/zenodo.22313592](https://doi.org/10.5281/zenodo.22313592),
+which resolves to the latest edition.
 
 The paper uses the Meaning Model as its selected world interface but does not
 own that grammar or its construction method. The companion Meaning Model paper
