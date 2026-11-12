@@ -26,8 +26,11 @@ The revision dated 16 September 2026 (UTC) is published on
 The revision dated 19 September 2026 (UTC) is published on
 [Zenodo](https://zenodo.org/records/22846315):
 [doi:10.5281/zenodo.22846315](https://doi.org/10.5281/zenodo.22846315).
+The revision dated 25 October 2026 (UTC) is published on
+[Zenodo](https://zenodo.org/records/23641075):
+[doi:10.5281/zenodo.23641075](https://doi.org/10.5281/zenodo.23641075).
 These DOI links identify individual editions.
-This manuscript is the revision dated 25 October 2026 (UTC), published on
+This manuscript is the revision dated 12 November 2026 (UTC), published on
 Zenodo under the concept DOI
 [doi:10.5281/zenodo.22313592](https://doi.org/10.5281/zenodo.22313592),
 which resolves to the latest edition.
